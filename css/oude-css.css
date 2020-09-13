@@ -1,0 +1,90 @@
+html {
+    background-color:  navajowhite;
+}
+
+body {
+    margin: 70;
+}
+/*header*/
+
+.fixed-bar {
+    height: 60px;
+}
+
+.page-title {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    color: navajowhite;
+    background-color: #2a6592;
+    padding: 10px 0;
+    margin: 0;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+/*nav*/
+.navigation {
+    text-align: center;
+    padding: 0;
+    display: flex;
+}
+
+.navigation p {
+    border: solid #2a6592 15px;
+}
+
+.navigation p, .navigation a {
+    width: 25%;
+    background-color: #7e9a9a;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 8px;
+}
+
+.main-bike img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/*main*/
+.trip-text {
+    background-color: #2a6592;
+    padding: 0;
+    display: flex;
+}
+
+.trip-text p {
+    border: solid #2a6592 15px;
+}
+
+.trip-text p, .trip-text a {
+    background-color: #7e9a9a;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 31.3%;
+    font-size: 1.2em;
+}
+
+.trip-images {
+    display: flex;
+}
+
+.trip-images img {
+    width: 31.9%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: solid #2a6592 8px;
+}
+
+/*footer*/
+
+
+
