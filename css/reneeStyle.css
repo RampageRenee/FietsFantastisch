@@ -1,0 +1,31 @@
+html{
+    background:#c79f54;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    background: #c79f54;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    height: 250px;
+}
+
+#top-story{
+
+    
+}
+.spacing1 {
+    margin: 3%;
+}
+
+.stop1 a {
+    text-decoration: none;
+    color: black;
+    background: #44955c;
+    padding: 8px;
+    border-radius: 2px;
+    margin: 15px 25px; 
+}
