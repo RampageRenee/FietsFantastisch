@@ -38,7 +38,7 @@ header {
     margin: 15px 25px; 
 }
 
-/* Over ons pagina welkoms tekst  
+/* Over ons pagina teksten 
 -------------------------------------------------------------------------*/
 #content-wrap {
     text-align: center;
@@ -46,7 +46,10 @@ header {
     font-size: larger;
 }
 
-
+.beschrijving-tekst {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
 
 
 
