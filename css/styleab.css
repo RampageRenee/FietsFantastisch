@@ -7,21 +7,21 @@ bruin: #c79f54;
 geel: #bec957;
 */
 
-/* Navigatie menu bovenkant pagina plus background
--------------------------------------------------------------------------*/
+/* gehele pagina ----------------------------------------------------------- */
 
 html{
     background:#c79f54;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'acumin-pro-semi-condensed', sans-serif;
 }
 
+/* navigate top pagina --------------------------------------------------------  */
 header {
     text-align: center;
     background: #c79f54;
     font-size: 30px;
     line-height: 1.5;
-    font-family: 'Caveat', sans-serif, cursive;
-    font-weight: 400;
+    font-family: 'shackleton', serif;
+    font-weight: 700; 
     height: 250px;
 }
 
@@ -34,39 +34,40 @@ body {
     margin: 3%;
 }
 
-#btntop a {
+.btntop a {
     text-decoration: none;
     color: black;
     background: #44955c;
     padding: 8px;
-    border-radius: 2px;
-    margin: 15px 25px; 
+    border-radius: 8px;
+    /* margin: 10px 20px;  */
 }
 
-/* Over ons pagina teksten 
+/* Hoofd tekst style pagina overons/verhuur
 -------------------------------------------------------------------------*/
 #content-wrap {
     text-align: center;
-    font-family: 'Caveat', sans-serif, cursive;
+    font-family: 'acumin-pro-semi-condensed', sans-serif;
     font-size: larger;
 }
 
 .beschrijving-tekst {
     text-align: center;
-    font-family: 'Caveat', sans-serif, cursive;
+    font-family: 'acumin-pro-semi-condensed', sans-serif;
+    border-width: 10px;
 }
 
 
 
 
-/* Voor de gehele html pagina 
+/* Overons foto alignments + introductie
 -------------------------------------------------------------------------*/
 
 
 
 
 
-/* Voor de gehele html pagina 
+/* verhuur pagina huurgegevens tabellen
 -------------------------------------------------------------------------*/
 
 
