@@ -11,7 +11,7 @@ geel: #bec957;
 
 html{
     background:#c79f54;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'shackleton', serif;
 }
 
 header {
@@ -19,7 +19,7 @@ header {
     background: #c79f54;
     font-size: 30px;
     line-height: 1.5;
-    font-family: 'Caveat', cursive;
+    font-family: 'acumin-pro-semi-condensed', sans-serif;
     font-weight: 400;
     height: 250px;
 }
