@@ -1,6 +1,22 @@
+
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+donker groen: #44955c;
+licht groen: #46ad65;
+oranje/rood: #c46952;
+bruin: #c79f54;
+geel: #bec957;
+
+LETTTERTYPE
+font-family: shackleton, serif;
+font-family: acumin-pro-semi-condensed, sans-serif; 
+
+*/
+
 html{
     background:#c79f54;
-    font-family: 'Montserrat', sans-serif;
+    font-family: acumin-pro-semi-condensed, sans-serif; 
 }
 
 header {
@@ -8,17 +24,13 @@ header {
     background: #c79f54;
     font-size: 30px;
     line-height: 1.5;
-    font-family: 'Caveat', cursive;
+    /*font-family: shackleton, serif; */
     font-weight: 400;
     height: 250px;
-}
 
-#top-story{
-
-    
 }
-.spacing1 {
-    margin: 3%;
+h1, h3 {
+    font-family: shackleton, serif;
 }
 
 .stop1 a {
@@ -29,3 +41,24 @@ header {
     border-radius: 2px;
     margin: 15px 25px; 
 }
+.spacing1 {
+    margin: 3%;
+}
+/*----------------------------------------extra Services-----------------------------------------*/
+
+
+#top-story{
+    background-color:#44955c ;
+
+    
+}
+#doorverwijzing{
+    background-color: #c46952;
+
+}
+#top-story ~ h1 {
+    margin-top: 30px;
+}
+
+/*------------------------------Contact Pagina---------------------------------------------------*/
+
