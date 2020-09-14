@@ -14,18 +14,20 @@
             <a href="./index.html"><img src="./images/Logo Biker haaglanden.png" 
                 alt="logo van biker haaglanden" width="132" height="132"></a>
         </div>   
-        <nav id="btn-top"> 
-            <a href="./index.html" target="_blank">Homepagina</a>
-            <a href="./verhuurpagina.html">Verhuur</a>
-            <a href="./Fiets-reizen.html">Reizen</a>
-            <a href="./overons.html">Over ons</a>
-            <a href="./extraServices.html">Extra services</a>
-            <a href="./contact.html" target="_blank">Contact</a>
-        </nav>
+        <section class="btntop">
+            <nav> 
+                <a href="./index.html" target="_blank">Homepagina</a>
+                <a href="./verhuurpagina.html">Verhuur</a>
+                <a href="./Fiets-reizen.html">Reizen</a>
+                <a href="./overons.html">Over ons</a>
+                <a href="./extraServices.html">Extra services</a>
+                <a href="./contact.html" target="_blank">Contact</a>
+            </nav>
+        </section>
     </header>
     <div id="content-wrap">
         <section id="verhuur_pagina_intro">
-            <main lang="nl"> <!--main content of de pagina 1x gebruiken per pagina-->
+            <main lang="nl">
             <h1><strong>Fietsverhuur Biker haaglanden</strong></h1>
             <p>
                 Welkom op de pagina van het fietsverhuur.
@@ -61,64 +63,64 @@
     <div id="verhuur_tabel">
         <h3>Vul hier de gegevens in, check de beschikbaarheid en krijg direct een prijsopgave</h3>
 
-    <form action="./index.html"> <!--Hier verklaren waar de info/data heen wordt verstuurd uiteindelijk naar een database-->
-        
-        <section class="email_adres_gegevens">  
-            <fieldset>
-                <label for="email"><strong>Vul hier je email adres in</strong></label>
-                <input type="email" name="email" id="email">
-            </fieldset>
-        </section>
-        <br>
+        <form action="./index.html"> <!--Hier verklaren waar de info/data heen wordt verstuurd uiteindelijk naar een database-->
             
-        <section class="aantal_fietsen">
-            <fieldset>
-                <label for="hoeveel_fietsen"><strong>Hoeveel fietsen wilt u huren?</strong></label>
-                <br><br>
-                <input type="number" name="how many bikes" 
-                id="hoeveel_fietsen"
-                step="1" max="10" min="1" required>
-            </fieldset>
-        </section>
-        
-        <br>
-
-        <section class="verhuur_datum">
-            <fieldset>
-                <label for="datum_verhuur"><strong>Wanneer wilt u de fietsen huren?</strong></label>
-                <p>Van</p>
-                <input id="datum_verhuur" type="date" name="welke date"
-                 required>
-                <p>Tot</p>
-                <input id="datum_verhuur" type="date" name="welke date"
-                 required>
-            </fieldset>
-        </section>
-
-        <br>
-
-        <section class="type_fietsen">
-            <fieldset>
-                <p><strong>Wat voor soort fietsen wilt u huren?</strong></p>
-                <label for="Dames_fiets">Dames fiets</label>
-                <input type="checkbox" id="Dames_fiets" name="soort fiets"
-                value="deze is aangevinkt">
-                <br>
-                <label for="Heren_fiets">Heren fiets</label>
-                <input type="checkbox" id="Heren_fiets" name="soort fiets"
-                value="deze is aangevinkt">
-                <br>
-                <label for="Elektrische_fiets">Elektrische fiets</label>
-                <input type="checkbox" id="Elektrische_fiets" name="soort fiets"
-                value="deze is aangevikt">
-            </fieldset>
-        </section>
-        <br>
-
-            <section class="verstuur_huur_gegevens">
-                <input type="submit" value="check beschikbaarheid">
+            <section class="email_adres_gegevens">  
+                <fieldset>
+                    <label for="email"><strong>Vul hier je email adres in</strong></label>
+                    <input type="email" name="email" id="email">
+                </fieldset>
             </section>
-    </form>
+            <br>
+                
+            <section class="aantal_fietsen">
+                <fieldset>
+                    <label for="hoeveel_fietsen"><strong>Hoeveel fietsen wilt u huren?</strong></label>
+                    <br><br>
+                    <input type="number" name="how many bikes" 
+                    id="hoeveel_fietsen"
+                    step="1" max="10" min="1" required>
+                </fieldset>
+            </section>
+            
+            <br>
+
+            <section class="verhuur_datum">
+                <fieldset>
+                    <label for="datum_verhuur"><strong>Wanneer wilt u de fietsen huren?</strong></label>
+                    <p>Van</p>
+                    <input id="datum_verhuur" type="date" name="welke date"
+                    required>
+                    <p>Tot</p>
+                    <input id="datum_verhuur" type="date" name="welke date"
+                    required>
+                </fieldset>
+            </section>
+
+            <br>
+
+            <section class="type_fietsen">
+                <fieldset>
+                    <p><strong>Wat voor soort fietsen wilt u huren?</strong></p>
+                    <label for="Dames_fiets">Dames fiets</label>
+                    <input type="checkbox" id="Dames_fiets" name="soort fiets"
+                    value="deze is aangevinkt">
+                    <br>
+                    <label for="Heren_fiets">Heren fiets</label>
+                    <input type="checkbox" id="Heren_fiets" name="soort fiets"
+                    value="deze is aangevinkt">
+                    <br>
+                    <label for="Elektrische_fiets">Elektrische fiets</label>
+                    <input type="checkbox" id="Elektrische_fiets" name="soort fiets"
+                    value="deze is aangevikt">
+                </fieldset>
+            </section>
+            <br>
+
+                <section class="verstuur_huur_gegevens">
+                    <input type="submit" value="check beschikbaarheid">
+                </section>
+        </form>
     </div>  
     
     <footer>
