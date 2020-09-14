@@ -44,14 +44,21 @@ h1, h3 {
 .spacing1 {
     margin: 3%;
 }
+.page-logo img, .page-title {
+    margin: 0px 120px;
+    display: inline;
+    vertical-align: middle;
+}
+.page-title{
+
+}
+.page-logo{
+
+}
 /*----------------------------------------extra Services-----------------------------------------*/
 
 
-#top-story{
-    background-color:#44955c ;
 
-    
-}
 #doorverwijzing{
     background-color: #c46952;
     display: inline-flex;
@@ -61,6 +68,15 @@ h1, h3 {
 }
 .button {
     background-color:#46ad65 ;
+}
+.wrapper{
+    background-color:#44955c ;
+    margin: 30px;
+}
+.block-service{
+    
+    margin: 2%;
+    align-content: center;
 }
 
 /*------------------------------Contact Pagina---------------------------------------------------*/
