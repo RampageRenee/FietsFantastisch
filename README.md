@@ -10,3 +10,5 @@ ik heb bij iedereen een stylesheet voor de letertypes die we op adobe fonts hadd
  de namen van deze zijn
  font-family: shackleton, serif;
  font-family: acumin-pro-semi-condensed, sans-serif;  
+
+ 
