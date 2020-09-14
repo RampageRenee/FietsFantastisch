@@ -44,15 +44,17 @@ h1 {
 }
 
 footer {
-    text-align: center;
+    /* text-align: center; */
     background: #c79f54;
-    font-size: 25px;
-    line-height: 4;
+    font-size: 15px;
+    line-height: 2;
     font-family: 'shackleton', serif;
-    font-weight: 700; 
-    height: 250px;
+    font-weight: 700;
 }
-
+.copywright {
+    text-align: right;
+    margin-right: 5%;
+}
 
 #logo1 {
     margin: 3%;
