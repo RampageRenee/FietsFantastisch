@@ -45,16 +45,23 @@ h1 {
 }
 
 footer {
-    /* text-align: center; */
+    /* text-align: left; */
     background: #c79f54;
+    color: black;
+    height: 300px;
     font-size: 15px;
     line-height: 2;
     font-family: 'shackleton', serif;
     font-weight: 700;
+    display: block;
 }
 
 #logo1 {
     margin: 3%;
+}
+
+.footerwrapper {
+    
 }
 
 /* navigate top pagina
@@ -96,14 +103,45 @@ footer {
 /* verhuur pagina huurgegevens tabellen
 -------------------------------------------------------------------------*/
 
+#verhuur_tabel {
+    text-align: center;
+}
 
 
+.email_wrap {
+    padding: 20px;
+    margin-left: 10px;
+    border: 0px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    padding:10px;
+    border-radius:10px;
+
+}
+
+.fietsen_wrap {
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 0%;
+    border: 0px;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    padding:10px;
+    border-radius:10px;
+}
+
+.submit_wrap {
+    appearance: none;
+    padding:10px;
+    border:none;
+    background-color:#c46952;
+    color:rgb(7, 0, 0);
+    font-weight:600;
+    border-radius:5px;
+    width:50%;
+}
 
 
 /* footer pagina
 -------------------------------------------------------------------------*/
-
-
 
 .copywright {
     text-align: right;
