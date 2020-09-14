@@ -8,6 +8,7 @@ geel: #bec957;
 */
 
 /* gehele pagina ----------------------------------------------------------- */
+
 html {
     box-sizing: border-box;
 }
@@ -51,17 +52,13 @@ footer {
     font-family: 'shackleton', serif;
     font-weight: 700;
 }
-.copywright {
-    text-align: right;
-    margin-right: 5%;
-}
 
 #logo1 {
     margin: 3%;
 }
 
-/* navigate top pagina --------------------------------------------------------  */
-
+/* navigate top pagina
+ ----------------------------------------------------------------------- */
 .btntop a {
     text-decoration: none;
     color: black;
@@ -106,3 +103,9 @@ footer {
 /* footer pagina
 -------------------------------------------------------------------------*/
 
+
+
+.copywright {
+    text-align: right;
+    margin-right: 5%;
+}
