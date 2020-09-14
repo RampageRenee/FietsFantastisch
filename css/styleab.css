@@ -20,9 +20,14 @@ header {
     background: #c79f54;
     font-size: 30px;
     line-height: 1.5;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', sans-serif, cursive;
     font-weight: 400;
     height: 250px;
+}
+
+body {
+    background-color:#46ad65;
+    margin: 0%;
 }
 
 #logo1 {
@@ -42,13 +47,13 @@ header {
 -------------------------------------------------------------------------*/
 #content-wrap {
     text-align: center;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', sans-serif, cursive;
     font-size: larger;
 }
 
 .beschrijving-tekst {
     text-align: center;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', sans-serif, cursive;
 }
 
 
