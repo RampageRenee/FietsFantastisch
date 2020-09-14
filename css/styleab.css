@@ -25,7 +25,7 @@ html {
 header {
     text-align: center;
     background: #c79f54;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     font-family: 'shackleton', serif;
     font-weight: 700; 
@@ -41,6 +41,16 @@ body {
 
 h1 {
     font-size: 50px;
+}
+
+footer {
+    text-align: center;
+    background: #c79f54;
+    font-size: 25px;
+    line-height: 4;
+    font-family: 'shackleton', serif;
+    font-weight: 700; 
+    height: 250px;
 }
 
 
@@ -91,5 +101,6 @@ h1 {
 
 
 
-/* Voor de gehele html pagina 
+/* footer pagina
 -------------------------------------------------------------------------*/
+
