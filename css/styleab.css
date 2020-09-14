@@ -7,7 +7,7 @@ bruin: #c79f54;
 geel: #bec957;
 */
 
-/* Voor de gehele html pagina 
+/* Navigatie menu bovenkant pagina plus background
 -------------------------------------------------------------------------*/
 
 html{
@@ -25,10 +25,28 @@ header {
     height: 250px;
 }
 
+#logo1 {
+    margin: 3%;
+}
 
+#btntop a {
+    text-decoration: none;
+    color: black;
+    background: #44955c;
+    padding: 8px;
+    border-radius: 2px;
+    margin: 15px 25px; 
+}
 
-/* Voor de gehele html pagina 
+/* Over ons pagina welkoms tekst  
 -------------------------------------------------------------------------*/
+#content-wrap {
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: larger;
+}
+
+
 
 
 
