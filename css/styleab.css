@@ -8,13 +8,20 @@ geel: #bec957;
 */
 
 /* gehele pagina ----------------------------------------------------------- */
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}  
 
-html{
+html {
     background:#c79f54;
     font-family: 'acumin-pro-semi-condensed', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* navigate top pagina --------------------------------------------------------  */
 header {
     text-align: center;
     background: #c79f54;
@@ -25,14 +32,23 @@ header {
     height: 250px;
 }
 
+/* Content op pagina's -------------------------------------------------------  */
+
 body {
     background-color:#46ad65;
     margin: 0%;
 }
 
+h1 {
+    font-size: 50px;
+}
+
+
 #logo1 {
     margin: 3%;
 }
+
+/* navigate top pagina --------------------------------------------------------  */
 
 .btntop a {
     text-decoration: none;
@@ -40,7 +56,7 @@ body {
     background: #44955c;
     padding: 8px;
     border-radius: 8px;
-    /* margin: 10px 20px;  */
+    /* margin: 10px 20px;   */
 }
 
 /* Hoofd tekst style pagina overons/verhuur
@@ -51,10 +67,11 @@ body {
     font-size: larger;
 }
 
-.beschrijving-tekst {
+.welkom_fotos {
     text-align: center;
     font-family: 'acumin-pro-semi-condensed', sans-serif;
     border-width: 10px;
+    font-size: large;
 }
 
 
