@@ -1,0 +1,138 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+donker groen: #44955c;
+licht groen: #46ad65;
+oranje/rood: #c46952;
+bruin: #c79f54;
+geel: #bec957;
+*/
+
+
+html{
+    background:#c79f54;
+    font-family:'shackleton', serif;
+}
+
+body {
+    background: #c79f54
+}
+
+header {
+    text-align: center;
+    background: #c79f54;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: 'acumin-pro-semi-condensed', sans-serif;
+    font-weight: 400;
+    height: 250px;
+}
+
+.spacing1 {
+    margin: 0px 0px 10px 0px;
+}
+
+.page-logo img, .page-title {
+    margin: 0px 80px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.page-title {   
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.stop1 a {
+    text-decoration: none;
+    color: black;
+    background: #44955c;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 15px 25px; 
+}
+
+.di1 {
+    margin: 20px 0px 20px 0px;
+    padding: 30px 0px 30px 0px;
+    background: #46ad65;
+}
+
+.main-bike {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+main {
+    background: #c79f54;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 500;
+    font-size: 50px;
+    margin: 0px 0px 0px 0px;
+}
+
+h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 0px 0px 0px 0px;
+}
+
+.trip-text {
+    background: #c79f54;
+    display: flex;
+    height: 100px;
+    text-align: center;
+    margin: 160px 0px 0px 0px;
+}
+
+.trip-text p {
+    width: 33%;
+    background: #e9f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 0px 15px; 
+}
+
+.trip-images {
+    display: flex;
+    padding: 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.trip-images img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+footer {
+    background: #c79f54;
+    text-align: center;
+    padding: 90px 0px 20px 0px;
+}
+
+.stop2 a {
+    text-decoration: none;
+    color: black;
+    background: #44955c;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 15px  25px; 
+}
+
+.sterk {
+    margin: 25px 0px 0px 0px;
+}
+
