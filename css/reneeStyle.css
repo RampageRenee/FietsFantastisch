@@ -1,0 +1,83 @@
+
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+donker groen: #44955c;
+licht groen: #46ad65;
+oranje/rood: #c46952;
+bruin: #c79f54;
+geel: #bec957;
+
+LETTTERTYPE
+font-family: shackleton, serif;
+font-family: acumin-pro-semi-condensed, sans-serif; 
+
+*/
+
+html{
+    background:#c79f54;
+    font-family: acumin-pro-semi-condensed, sans-serif; 
+}
+
+header {
+    text-align: center;
+    background: #c79f54;
+    font-size: 30px;
+    line-height: 1.5;
+    /*font-family: shackleton, serif; */
+    font-weight: 400;
+    height: 250px;
+
+}
+h1, h3 {
+    font-family: shackleton, serif;
+}
+
+.stop1 a {
+    text-decoration: none;
+    color: black;
+    background: #44955c;
+    padding: 8px;
+    border-radius: 2px;
+    margin: 15px 25px; 
+}
+.spacing1 {
+    margin: 3%;
+}
+.page-logo img, .page-title {
+    margin: 0px 120px;
+    display: inline;
+    vertical-align: middle;
+}
+.page-title{
+
+}
+.page-logo{
+
+}
+/*----------------------------------------extra Services-----------------------------------------*/
+
+
+
+#doorverwijzing{
+    background-color: #c46952;
+    display: inline-flex;
+    flex-basis: 33%;
+
+
+}
+.button {
+    background-color:#46ad65 ;
+}
+.wrapper{
+    background-color:#44955c ;
+    margin: 30px;
+}
+.block-service{
+    
+    margin: 2%;
+    align-content: center;
+}
+
+/*------------------------------Contact Pagina---------------------------------------------------*/
+
