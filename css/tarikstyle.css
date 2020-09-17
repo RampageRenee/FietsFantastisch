@@ -1,0 +1,71 @@
+/*
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+donker groen: #44955c;
+licht groen: #46ad65;
+oranje/rood: #c46952;
+bruin: #c79f54;
+geel: #bec957;
+*/
+
+  html {
+    background:#c79f54;
+    font-family: 'acumin-pro-semi-condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #c79f54
+}
+
+header {
+    text-align: center;
+    background: #c79f54;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: 'acumin-pro-semi-condensed', sans-serif;
+    font-weight: 400;
+    height: 250px;
+}
+
+spacing1 {
+    margin: 0px 0px 10px 0px;
+}
+
+.page-logo img, .page-title {
+    margin: 0px 80px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.page-title {   
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: 80px;
+}
+
+.stop1 a {
+    text-decoration: none;
+    color: black;
+    background: #44955c;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 15px 25px; 
+}
+
+.basisfietsreis {
+    position: static;
+    left: 100;
+    top: 100;
+  }
+
+footer {
+    background: #c79f54;
+    text-align: center;
+    padding: 90px 0px 20px 0px;
+}
+
+.spacing1 {
+    margin: 0px 0px 10px 0px;
+}
