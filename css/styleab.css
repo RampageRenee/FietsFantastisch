@@ -45,15 +45,16 @@ h1 {
 }
 
 footer {
-    /* text-align: left; */
+    text-align: center;
     background: #c79f54;
     color: black;
-    height: 300px;
+    /* height: 300px; */
     font-size: 15px;
-    line-height: 2;
+    /* line-height: 2; */
     font-family: 'shackleton', serif;
     font-weight: 700;
     display: block;
+    padding: 90px 0px 20px 0px;
 }
 
 #logo1 {
@@ -141,6 +142,17 @@ footer {
 -------------------------------------------------------------------------*/
 
 .copywright {
-    text-align: right;
-    margin-right: 5%;
+    text-align: center;
+    /* margin-right: 5%; */
+    margin-top: 2cm;
+
+}
+
+.footerwrapper a {
+    text-decoration: none;
+    color: black;
+    background: #44955c;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 15px  25px; 
 }
