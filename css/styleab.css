@@ -134,7 +134,8 @@ footer {
     color:rgb(7, 0, 0);
     font-weight:600;
     border-radius:5px;
-    width:50%;
+    width: 25%;
+    margin-bottom: 20px;
 }
 
 
