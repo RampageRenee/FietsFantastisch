@@ -23,7 +23,7 @@ ul {
     padding: 0%;
     overflow: hidden;
     background-color:  #46ad65;
-
+    border-radius: 20px;
 }
 
 li {
@@ -38,15 +38,16 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
+    font-size: 20px;
+    font-weight: bold;
 }
 
 li a:hover {
-    background-color: yellow;
+    background-color: #c46952;
 }
 
 .active {
-    background-color: yellow;
+    background-color: #c46952;
 }
 
 li {
@@ -64,5 +65,5 @@ li:first-child {
 .overons_fotos {
   display: grid;  
   grid-template-columns: auto auto;
-
+  justify-content: center;  
 }
