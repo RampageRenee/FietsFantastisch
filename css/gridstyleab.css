@@ -58,12 +58,29 @@ li:first-child {
     border-right: none;
 }
 
-/* Tabel voor verhuur ------------------------------------------------------------ */
+/* Tabel voor verhuur --------------------------------------------------------------------------- */
 
-/* welkom foto's over ons pagina */
+
+/* welkom teksten over ons pagina ----------------------------------------------------------------*/
+
+
+.content-wrap1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 150%;
+}
+
+
+/* welkom foto's over ons pagina----------------------------------------------------------- */
 
 .overons_fotos {
   display: grid;  
   grid-template-columns: auto auto;
   justify-content: center;  
+}
+
+.overons_fotos, figcaption {
+  font-weight: bold;
+  
+
 }
