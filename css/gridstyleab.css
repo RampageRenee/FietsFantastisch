@@ -57,6 +57,17 @@ li {
 li:first-child {
     border-right: none;
 }
+/* logo met achtergrond verhuur/overons --------------------------------------------------------- */
+
+.logo1 {
+    align-content: center;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+
+
+
 
 /* Tabel voor verhuur --------------------------------------------------------------------------- */
 
