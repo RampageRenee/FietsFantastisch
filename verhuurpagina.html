@@ -25,15 +25,16 @@
         </section>
     </header>
 
-    <section class="logo1">
+    <section class="logo12">
         <img src="/images/Logo met achtergrond.jpg" 
             alt="logo van biker haaglanden" width="1300px" height="400px">
     </section>   
 
-    <div id="content-wrap">
+    <div id="content_wrap1">
+        
         <section class="verhuur_pagina_intro">
             <main lang="nl">
-                <h1><strong>Fietsverhuur Biker haaglanden</strong></h1>
+                <h1>Fietsverhuur Biker</h1>
                 <p>
                     Welkom op de pagina van het fietsverhuur.
                     Hier leggen we uit hoe de verhuur werkt en waar 
@@ -57,6 +58,7 @@
         </section>
 
         <section class="verzekering">
+            <h2>Fietsverzekering</h2>
             <p>
                 Wil je meer weten over de mogelijkheid om
                 een fietsverzekering af te sluiten? <a href="https://fietsverzekering.nl" target="_blank">klik op deze link</a>
@@ -64,28 +66,14 @@
             </p>
         </section>
     </div>
-    <h2>Vul hieronder de gegevens in, check de beschikbaarheid en krijg direct een prijsopgave</h2>
+    
+    <p class="titleverhuur">Vul hieronder de gegevens in en krijg direct een prijsopgave</p>
     
     <div id="verhuur_tabel">
-
+       
         <form action="./index.html"> <!--Hier verklaren waar de info/data heen wordt verstuurd uiteindelijk naar een database-->
 
-            <section class="email_gegevens">
-                <label for="email"><p>Vul hier je email adres in:</p></label>
-                <input type="email" name="email" id="email">
-            </section>
-
-                
-            <section class="aantal_fietsen">
-                <label for="hoeveel_fietsen"><p>Hoeveel fietsen wilt u huren?</p></label>
-                <input type="number" name="how many bikes" 
-                id="hoeveel_fietsen"
-                step="1" max="10" min="1" required>
-            </section>
-            
-
-
-            <section class="verhuur_datum">
+            <section>
                 <label for="datum_verhuur"><p>Wanneer wilt u de fietsen huren?</p></label>
                 <p>Van:</p>
                 <input id="datum_verhuur" type="date" name="welke date"
@@ -94,25 +82,36 @@
                 <input id="datum_verhuur" type="date" name="welke date"
                     required>
             </section>
+                
+            <section>
+                <label for="hoeveel_fietsen"><p>Hoeveel fietsen wilt u huren?</p></label>
+                <input type="number" name="how many bikes" 
+                id="hoeveel_fietsen"
+                step="1" max="10" min="1" required>
+            </section>
 
-
-            <section class="type_fietsen">
+            <section>
                 <p>Wat voor soort fietsen wilt u huren?</p>
                 <label for="Dames_fiets">Dames fiets</label>
                 <input type="checkbox" id="Dames_fiets" name="soort fiets"
                     value="deze is aangevinkt">
-            
+                <br>
                 <label for="Heren_fiets">Heren fiets</label>
                 <input type="checkbox" id="Heren_fiets" name="soort fiets"
                     value="deze is aangevinkt">
-
+                <br>
                 <label for="Elektrische_fiets">Elektrische fiets</label>
                 <input type="checkbox" id="Elektrische_fiets" name="soort fiets"
                     value="deze is aangevikt">
             </section>
 
-            <section class="verstuur_huur_gegevens">
-                <input class="submit_wrap" type="submit" value="check beschikbaarheid">
+            <section>
+                <label for="email"><p>Vul hier je email adres in:</p></label>
+                <input type="email" name="email" id="email">
+            </section>
+
+            <section class="submit_wrap123">
+                <input type="submit" value="check beschikbaarheid">
             </section>
         </form>
     </div>  

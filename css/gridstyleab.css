@@ -59,17 +59,55 @@ li:first-child {
 }
 /* logo met achtergrond verhuur/overons --------------------------------------------------------- */
 
-.logo1 {
+.logo12 {
     align-content: center;
-    margin-left: -10px;
+    margin-left: -1px;
     margin-top: 10px;
+    margin-right: 0px;
+}
+
+.logo12 img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* main text page --------------------------------------------------------------------------- */
+
+#content_wrap1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-column-gap: 20px;
+    background-color:  #46ad65;
+    margin: 5px;
+
+}
+
+/* Verhuurtabel ----------------------------------------------------------------------------- */
+
+.titleverhuur {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+ 
+#verhuur_tabel, form {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-column-gap: 20px;
+    background-color:  #46ad65;
+    margin: 5px;
+
 }
 
 
 
 
 
-/* Tabel voor verhuur --------------------------------------------------------------------------- */
+
 
 
 /* welkom teksten over ons pagina ----------------------------------------------------------------*/
