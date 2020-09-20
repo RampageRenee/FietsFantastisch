@@ -7,7 +7,7 @@ html {
 
 html {
     background:#c79f54;
-    font-family: 'acumin-pro-semi-condensed', sans-serif;
+    font-family: 'shackleton', sans-serif;
 }
 
 /* Top navigatie menu aan de hand van wireframe hieronder ---------------------------------------- */
@@ -94,22 +94,26 @@ li:first-child {
 }
  
 #verhuur_tabel, form {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: center;
-    grid-column-gap: 20px;
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto auto; */
+    /* justify-content: center; */
+    /* grid-column-gap: 20px; */
     background-color:  #46ad65;
     margin: 5px;
-
+    text-align: center;
 }
 
+input {
+    border-radius: 5px;
+    background-color:  #c46952;
+}
 
+.submit {
+    padding: 12px;
+    margin: 20px;
+    font-weight: 700;
 
-
-
-
-
-
+}
 /* welkom teksten over ons pagina ----------------------------------------------------------------*/
 
 
@@ -131,5 +135,35 @@ li:first-child {
 .overons_fotos, figcaption {
   font-weight: bold;
   
+
+}
+
+/* FOOTER ------------------------------------------------------------ */
+
+.footer {
+    background: #46ad65;
+    height: 400px;
+}
+
+footer .footer-section-icons {
+    text-align: center;
+    margin-top: -90px;
+}
+
+footer .footer-section-icons i {
+    padding: 10px 30px 10px 30px;
+
+}
+
+footer .footer-bottom {
+    text-align: center;
+    font-weight: 700;
+}
+
+footer .footer-section-links {
+    display: grid;
+    grid-row-gap: 40px;
+    text-align: right;
+    padding: 30px;
 
 }
