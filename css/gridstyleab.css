@@ -62,8 +62,7 @@ li:first-child {
 .logo12 {
     align-content: center;
     margin-left: -1px;
-    margin-top: 10px;
-    margin-right: 0px;
+    margin: 5px;
 }
 
 .logo12 img {
@@ -94,10 +93,6 @@ li:first-child {
 }
  
 #verhuur_tabel, form {
-    /* display: grid; */
-    /* grid-template-columns: auto auto auto auto; */
-    /* justify-content: center; */
-    /* grid-column-gap: 20px; */
     background-color:  #46ad65;
     margin: 5px;
     text-align: center;
@@ -143,6 +138,7 @@ input {
 .footer {
     background: #46ad65;
     height: 400px;
+    margin: 5px;
 }
 
 footer .footer-section-icons {
@@ -166,4 +162,8 @@ footer .footer-section-links {
     text-align: right;
     padding: 30px;
 
+}
+
+footer .footer-section-links a:link {
+    text-decoration: none;
 }
