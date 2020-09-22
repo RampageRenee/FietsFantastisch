@@ -25,7 +25,7 @@ html {
     font-family: 'acumin-pro-semi-condensed', sans-serif;
 }
 
-/* Top navigatie menu aan de hand van wireframe hieronder ---------------------------------------- */
+/* Top navigatie menu aan de hand van wireframe hieronder AB ---------------------------------------- */
 
 header {
     background-color: #c79f54;
@@ -72,7 +72,7 @@ li {
 li:first-child {
     border-right: none;
 }
-/* logo met achtergrond verhuur/overons --------------------------------------------------------- */
+/* logo met achtergrond verhuur/overons Ab--------------------------------------------------------- */
 
 .logo12 {
     align-content: center;
@@ -87,7 +87,7 @@ li:first-child {
 
 
 
-/* main text page --------------------------------------------------------------------------- */
+/* main text page over ons ab--------------------------------------------------------------------------- */
 
 #content_wrap1 {
     display: grid;
@@ -99,7 +99,7 @@ li:first-child {
 
 }
 
-/* Verhuurtabel ----------------------------------------------------------------------------- */
+/* Verhuurtabel verhuur pagina----------------------------------------------------------------------------- */
 
 .titleverhuur {
     text-align: center;
@@ -148,7 +148,7 @@ input {
 
 }
 
-/* FOOTER ------------------------------------------------------------ */
+/* FOOTER over ons / verhuur pagina------------------------------------------------------------ */
 
 .footer {
     background: #46ad65;
