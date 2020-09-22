@@ -148,7 +148,7 @@ input {
 
 }
 
-/* FOOTER over ons / verhuur pagina------------------------------------------------------------ */
+/* FOOTER over ons / verhuur------------------------------------------------------------ */
 
 .footer {
     background: #46ad65;
@@ -163,22 +163,25 @@ footer .footer-section-icons {
 
 footer .footer-section-icons i {
     padding: 10px 30px 10px 30px;
+    padding-top: 85px;
 
 }
 
 footer .footer-bottom {
-    text-align: center;
+    text-align: left;
     font-weight: 700;
-}
-
-footer .footer-section-links {
-    display: grid;
-    grid-row-gap: 40px;
-    text-align: right;
-    padding: 30px;
-
 }
 
 footer .footer-section-links a:link {
     text-decoration: none;
+}
+
+footer .footer-section-links {
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+footer, img {
+    text-align: center;
 }
