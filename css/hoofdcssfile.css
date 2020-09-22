@@ -176,10 +176,14 @@ footer .footer-section-links a:link {
     text-decoration: none;
 }
 
-footer .footer-section-links {
+footer .footermenu {
     text-align: center;
     font-size: x-large;
-    
+    font-weight: 700;
+}
+
+.footermenu {
+    text-align: center;
 }
 
 footer, img {
