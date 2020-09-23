@@ -7,33 +7,30 @@
     <title>Fiets reizen</title>
     <link rel="shortcut icon" href="images/Logo Biker haaglanden.jpeg">
     <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/tarikstyle.css">
+    <link rel="stylesheet" href="/css/hoofdcssfile.css">
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css">
 </head>
 <header>
-<style>
-.plaatje {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}        
-</style>
-    <div class="spacing1">
-        <a class="page-logo" href="./index.html"><img src="./images/Logo Biker haaglanden.png" alt="logo van biker haaglanden" height="132" width="132"></a>
-        <h1 class="page-title"><a href="./index.html"></a> Biker Haagenlanden</h1>
-    </div>
-    <nav class="stop1">
-        <a href="./index.html" target="_blank">Homepagina</a>
-        <a href="./verhuurpagina.html">Verhuur</a>
-        <a href="./fietsreizen.html">Reizen</a>
-        <a href="./overons.html">Over ons</a>
-        <a href="./extraServices.html">Extra services</a>
-        <a href="./contact.html">Contact</a>
-    </nav>
+    <section class="btntop">
+        <nav> 
+            <ul>
+                <li><a href="./index.html" target="_blank">Homepagina</a></li>
+                <li style="float: right;"><a href="./contact.html">Log in</a></li>
+                <li style="float: right;"><a href="./contact.html">Contact</a></li>
+                <li style="float: right;"><a href="./extraservices.html">Extra services</a></li>
+                <li style="float: right;"><a href="./fietsreizen.html">Reizen</a></li>
+                <li style="float: right;"><a href="./overons.html">Over ons</a></li>
+                <li style="float: right;"><a class="active" href="./verhuurpagina.html">Verhuur</a></li>
+            </ul>
+        </nav>
+    </section>
 </header>
+
+<section class="logo12">
+    <a href="./index.html" target="_blank"><img src="/images/Logo met achtergrond.jpg" 
+        alt="logo van biker haaglanden" width="1300" height="400"></a>
+</section>  
+ 
     <section class="basisfietsreis">
         <h1>basis reis</h1>
         <img src="./images/basis reis.jpg" alt="basis fietsreis" width="500" height="300">
@@ -52,17 +49,30 @@
             <li>Keuze uit afstanden van 40 tot 120 kilometer.</li>
         </ul>
     </section>
-        <footer>
-            <nav>
-                <a href="./index.html"><img src="./images/Logo Biker haaglanden.png" alt="logo van biker haaglanden" height="132" width="132"></a>
-                <a href="./index.html" target="_blank">Homepagina</a>
+    <footer>
+        <section class="footer">
+            <section class="footermenu"> 
+                <a href="./index.html">Home pagina</a>
                 <a href="./verhuurpagina.html">Verhuur</a>
                 <a href="./fietsreizen.html">Reizen</a>
                 <a href="./overons.html">Over ons</a>
-                <a href="./extraServices.html">Extra services</a>
+                <a href="./extraservices.html">Extra services</a>
                 <a href="./contact.html">Contact</a>
-            </nav>
-            <p><strong>&copy; Pagina gemaakt door: Tarik</strong></p>
-        </footer>
+            </section>
+            <img src="./images/Logo Biker haaglanden.png" alt="logo biker" width="300px" height="300px">
+            <div class="footer-section-icons">
+                <a href="https://www.youtube.com/watch?v=tnVs-rN6SaM" target="_blank"><i class="fa fa-youtube" style="font-size: 48px;"aria-hidden="true"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" style="font-size: 48px;" aria-hidden="true"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram" style="font-size: 48px;" aria-hidden="true"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 48px;" aria-hidden="true"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square" style="font-size: 48px;" aria-hidden="true"></i></a>
+                <a href="https://outlook.com" target="_blank"><i class="fa fa-envelope" style="font-size: 48px;" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+        <section class="footer-bottom">
+            &copy; Pagina gemaakt door: Tarik
+        </section>
+    </footer>
     </body>
 </html>
