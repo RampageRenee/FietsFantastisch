@@ -127,25 +127,12 @@ li:first-child {
 }
 
 
-main {
+.Introductiehomepagina {
     background: #c79f54;
     text-align: center;
     margin: 0px 0px 0px 0px;
 }
 
-h2 {
-    font-family: 'Caveat', cursive;
-    font-weight: 500;
-    font-size: 50px;
-    margin: 0px 0px 0px 0px;
-}
-
-h3 {
-    font-family: 'Caveat', cursive;
-    font-weight: 200;
-    font-size: 30px;
-    margin: 0px 0px 0px 0px;
-}
 
 .trip-text {
     background: #c79f54;
@@ -247,6 +234,62 @@ input {
 
 
 /* --------------------------------Extra Services en Contact-------------RENEE------------ */
+
+
+
+
+#doorverwijzing{
+    background-color: #c46952;
+    display: inline-flex;
+    flex-basis: 33%;
+
+
+}
+.nav-buttons a {
+    
+    text-decoration: none;
+    color: black;
+    background: #c79f54;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 15px 25px; 
+    margin-top: 30%;
+}
+.button {
+    background-color:#46ad65 ;
+}
+.wrapper{
+    background-color:#44955c ;
+    padding: 30px;
+}
+.block-service{
+    
+    margin: 2%;
+    align-content: center;
+}
+
+/*------------------------------Contact Pagina---------------------------------------------------*/
+.contact-box{
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.space{
+    margin-top: 300px;
+}
+}
+
+ .contact{
+    display: inline-block;
+    box-sizing: border-box;
+}
+.locatie{
+    background-image: url("images\contact-map.png");
+}
+
 
 /* FOOTER over ons / verhuur------------------------------------------------------------ */
 
