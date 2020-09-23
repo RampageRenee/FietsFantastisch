@@ -91,7 +91,10 @@ h1, h3 {
 
 
 }
-
+.space{
+    margin-top: 300px;
+}
+}
 
  .contact{
     display: inline-block;
