@@ -83,8 +83,20 @@ h1, h3 {
 }
 
 /*------------------------------Contact Pagina---------------------------------------------------*/
+.contact-box{
+    display: flex;
+    flex-basis: auto;
+    align-items: center;
+    justify-content: space-evenly;
 
-.contact{
+
+}
+
+
+ .contact{
     display: inline-block;
     box-sizing: border-box;
+}
+.locatie{
+    background-image: url("images\contact-map.png");
 }
