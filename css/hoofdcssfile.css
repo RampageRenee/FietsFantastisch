@@ -127,25 +127,12 @@ li:first-child {
 }
 
 
-main {
+.Introductiehomepagina {
     background: #c79f54;
     text-align: center;
     margin: 0px 0px 0px 0px;
 }
 
-h2 {
-    font-family: 'Caveat', cursive;
-    font-weight: 500;
-    font-size: 50px;
-    margin: 0px 0px 0px 0px;
-}
-
-h3 {
-    font-family: 'Caveat', cursive;
-    font-weight: 200;
-    font-size: 30px;
-    margin: 0px 0px 0px 0px;
-}
 
 .trip-text {
     background: #c79f54;
