@@ -303,6 +303,8 @@ input {
 
 .titleoptiesfiets {
     text-align: center;
+    font-size: 25px;
+    font-weight: 700;
 }
 
 
@@ -313,6 +315,9 @@ input {
     text-align: center;
 }
 
+.submitbtnopties {
+    text-align: center;
+}
 
 /* FOOTER over ons / verhuur------------------------------------------------------------ */
 
