@@ -301,6 +301,11 @@ input {
 
 /* toonfietsen opties na verhuurformulier ------------------------------------------------ */
 
+.titleoptiesfiets {
+    text-align: center;
+}
+
+
 .toon-fietsen {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
