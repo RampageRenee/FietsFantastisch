@@ -232,16 +232,13 @@ input {
 
 .overons_fotos, figcaption {
   font-weight: bold;
-  
-
 }
+
 /* ---------------------------Fiets Reizen---------------------TARIK--------- */
 
 .uitleg  {
     text-align: center;
 }
-
-
 
 /* --------------------------------Extra Services en Contact-------------RENEE------------ */
 
@@ -299,6 +296,16 @@ input {
 }
 .locatie{
     background-image: url("images\contact-map.png");
+}
+
+
+/* toonfietsen opties na verhuurformulier ------------------------------------------------ */
+
+.toon-fietsen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    text-align: center;
 }
 
 
