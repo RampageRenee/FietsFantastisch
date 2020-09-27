@@ -99,7 +99,7 @@ li:first-child {
 }
 
 .page-title {   
-    font-family: 'Caveat', cursive;
+     font-family: 'Caveat', cursive;   
     font-weight: 600;
     font-size: 80px;
 }
@@ -229,22 +229,21 @@ input {
 
 .uitleg  {
     text-align: center;
+    
 }
 
 
 
 /* --------------------------------Extra Services en Contact-------------RENEE------------ */
-
-
-
-
-#doorverwijzing{
-    background-color: #c46952;
-    display: inline-flex;
-    flex-basis: 33%;
-
-
+.title-extra{
+    text-align: center;
 }
+.main-text {
+    text-align: center;
+}
+
+
+
 .nav-buttons a {
     
     text-decoration: none;
@@ -263,9 +262,17 @@ input {
     padding: 30px;
 }
 .block-service{
-    
+    text-align: center;
     margin: 2%;
     align-content: center;
+    padding-bottom: 20px;
+    border: solid 10px #c79f54;
+}
+#doorverwijzing{
+    background-color: #c46952;
+    display: inline-flex;
+    flex-basis: 33%;
+    
 }
 
 /*------------------------------Contact Pagina---------------------------------------------------*/
