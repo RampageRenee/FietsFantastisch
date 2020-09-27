@@ -71,10 +71,31 @@
     <p class="titleverhuur">Vul hieronder de gegevens in en krijg direct een prijsopgave</p>
     
     <section id="verhuur_tabel">
-       
-        <form action="./index.html">
+        <form action="./optiesfietsen.html">
+            <section class="tabel-lay-out">
+                <p>Bij welke locatie van biker wilt u een fiets huren:</p>
+                <label for="locatie_hoofd">Den Haag</label>
+                <input type="checkbox" id="locatie_hoofd" name="soort-locatie"
+                    value="deze is aangevinkt">
+                <br>
+                <label for="locatie_zoetemeer">Zoetemeer</label>
+                <input type="checkbox" id="locatie_zoetemeer" name="soort-locatie"
+                    value="deze is aangevinkt">
+                <br>
+                <label for="locatie_rijswijk">Rijswijk</label>
+                <input type="checkbox" id="locatie_rijswijk" name="soort-locatie"
+                    value="deze is aangevikt">
+                <br>
+                <label for="locatie_wassenaar">Wassenaar</label>
+                <input type="checkbox" id="locatie_wassenaar" name="soort-locatie"
+                    value="deze is aangevikt">
+                <br>
+                <label for="locatie_scheveningen">Scheveningen</label>
+                <input type="checkbox" id="locatie_scheveningen" name="soort-locatie"
+                    value="deze is aangevikt">        
+            </section>
 
-            <section>
+            <section class="tabel-lay-out">
                 <label for="datum_verhuur"><p>Wanneer wilt u de fietsen huren?</p></label>
                 <p>Van:</p>
                 <input id="datum_verhuur" type="date" name="welke date"
@@ -84,14 +105,14 @@
                     required>
             </section>
                 
-            <section class="number1">
+            <section class="tabel-lay-out">
                 <label for="hoeveel_fietsen"><p>Hoeveel fietsen wilt u huren?</p></label>
                 <input type="number" name="how many bikes" 
                 id="hoeveel_fietsen"
                 step="1" max="10" min="1" required>
             </section>
 
-            <section>
+            <section class="tabel-lay-out">
                 <p>Wat voor soort fietsen wilt u huren? <br> U kunt meedere selecteren: </p>
                 <label for="Dames_fiets">Dames fiets</label>
                 <input type="checkbox" id="Dames_fiets" name="soort fiets"
@@ -106,7 +127,7 @@
                     value="deze is aangevikt">
             </section>
 
-            <section>
+            <section class="tabel-lay-out">
                 <label for="email"><p>Vul hier je email adres in:</p></label>
                 <input type="email" name="email" id="email">
             </section>
@@ -114,7 +135,6 @@
             <section>
                 <input class="submit" type="submit" value="check beschikbaarheid">
             </section>
-        
         </form>
     </section>  
     

@@ -202,6 +202,16 @@ input {
     font-weight: 700;
 
 }
+
+.tabel-lay-out {
+    font-weight: 700;
+    font-size: large;
+} 
+
+
+
+
+
 /* welkom teksten over ons pagina ----------------------------------------------------------------*/
 
 
@@ -222,17 +232,14 @@ input {
 
 .overons_fotos, figcaption {
   font-weight: bold;
-  
-
 }
+
 /* ---------------------------Fiets Reizen---------------------TARIK--------- */
 
 .uitleg  {
     text-align: center;
     
 }
-
-
 
 /* --------------------------------Extra Services en Contact-------------RENEE------------ */
 .title-extra{
@@ -298,6 +305,26 @@ input {
     background-image: url("images\contact-map.png");
 }
 
+
+/* toonfietsen opties na verhuurformulier ------------------------------------------------ */
+
+.titleoptiesfiets {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+.toon-fietsen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    text-align: center;
+}
+
+.submitbtnopties {
+    text-align: center;
+}
 
 /* FOOTER over ons / verhuur------------------------------------------------------------ */
 
