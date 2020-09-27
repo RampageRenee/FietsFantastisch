@@ -326,7 +326,7 @@ input {
     text-align: center;
 }
 
-/* FOOTER over ons / verhuur------------------------------------------------------------ */
+/* FOOTER --------------------------------------------------- */
 
 .footer {
     background: #46ad65;
@@ -366,4 +366,15 @@ footer .footermenu {
 
 footer, img {
     text-align: center;
+}
+/*-----------------------------------Responsive------------------------------------------------------------ */
+
+@media screen (max-width: 700px) {
+footer .footermenu{
+    align-items:right
+}
+.footer-section-icons{
+    align-items: left;
+
+}
 }
