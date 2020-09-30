@@ -370,7 +370,7 @@ footer, img {
 /*-----------------------------------Responsive------------------------------------------------------------ */
 
 @media screen (max-width: 700px) {
-footer .footermenu{
+ .footermenu{
     align-items:right
 }
 .footer-section-icons{
