@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css"> <!--onze font worden in de stylesheet gelinkd-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--onze inconen onder aan de pagina worden hierdoor getoond-->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Kies uw fiets</title>
+    <title>Kies uw accessoires</title>
 </head>
 <body>
     <header>
@@ -31,51 +31,54 @@
             alt="logo van biker haaglanden" width="1300" height="400"></a>
     </section>   
     
-    <p class="titleoptiesfiets">Voor de aangegeven datum kunt u kiezen uit de volgende opties:</p>
+    <p class="titleoptiesfiets">Voor de geselecteerde fietsen kunt u kiezen uit de volgende accessoires:</p>
     
     <main class="toon-fietsen">
 
-        <section class="herenfiets">
-            <img src="./images/herenfiets.jpg" alt="afbeelding van een herenfiets">
+        <section class="kinderzitje">
+            <img src="./images/kinderzitje.jpg" alt="afbeelding van een kinderzitje"
+            width="260px" height="163px">
         </section>
 
-        <section class="damesfiets">
-            <img src="./images/damesfiets.jpg" alt="afbeelding van een damesfiets">
+        <section class="zijwieltjes">
+            <img src="./images/zijwieltjes.jpg" alt="afbeelding van zijwieljes"
+            width="260px" height="163px">
         </section>
         
         <section class="elektrischefiets">
-            <img src="./images/Elektrischefiets.jpg" alt="">
+            <img src="./images/fietshelm.jpg" alt="afbeelding van een fiets helm"
+            width="260px" height="163px">
         </section>
 
         <section>
-            <p>De heren fiets: €25 per dag</p>
-            <label for="hoeveel_herenfietsen"><p>Aantal:</p></label>
-                <input type="number" name="aantalherenfietsen" 
-                id="hoeveel_herenfietsen"
-                step="1" max="5" min="0">
+            <p>Kinder zitje: €5 per fiets</p>
+            <label for="hoeveel_kinderzitjes"><p>Aantal:</p></label>
+                <input type="number" name="aantalkinderzitjes" 
+                id="hoeveel_kinderzitjes"
+                step="1" max="10" min="0">
         </section>
 
         <section>
-            <p>De dames fiets: €25 per dag</p>
-            <label for="hoeveel_damesfietsen"><p>Aantal:</p></label>
-                <input type="number" name="aantaldamesfietsen" 
-                id="hoeveel_damesfietsen"
-                step="1" max="5" min="0">
+            <p>Zijwieltjes: €10 per fiets</p>
+            <label for="hoeveel_zijwieltjes"><p>Aantal:</p></label>
+                <input type="number" name="aantalzijwieltjes" 
+                id="hoeveel_zijwieltjes"
+                step="1" max="1" min="0">
+                <p style="color: red;"><strong>Nog 1 beschikbaar!</strong></p>
         </section>
 
         <section>
-            <p>De Elektrische fiets: €45 per dag</p>
-            <label for="hoeveel_elekfietsen"><p>Aantal:</p></label>
-                <input type="number" name="aantalelekfietsen" 
-                id="hoeveel_elekfietsen"
-                step="1" max="2" min="0">
-            <p style="color: red;"><strong>Nog 2 fietsen beschikbaar!</strong></p>
+            <p>Fiets helm: €5 per fiets</p>
+            <label for="hoeveel_helmen"><p>Aantal:</p></label>
+                <input type="number" name="aantalhelmen" 
+                id="hoeveel_helmen"
+                step="1" max="10" min="0">
         </section>
     </main>
 
 
     <section class="submitbtnopties">
-       <a href="./accessoires.html"><input class="submit" type="submit" value="Klik hier om verder te gaan naar accessoires"></a> 
+        <input class="submit" type="submit" value="Klik hier om verder te gaan naar de huurvoorwaarden">
     </section>
 
 
