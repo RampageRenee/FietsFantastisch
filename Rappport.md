@@ -609,18 +609,6 @@ Resulterende hierin hebben we het bouwplan voor de aangereikte casus geschreven 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 Aanbevelingen
 
 Zoals in de knelpunten beschreven voorzien wij mogelijk een aantal problemen. Hiervoor hebben we een aantal oplossingen bedacht. Betreffende:
