@@ -10,5 +10,14 @@ ik heb bij iedereen een stylesheet voor de letertypes die we op adobe fonts hadd
  de namen van deze zijn
  font-family: shackleton, serif;
  font-family: acumin-pro-semi-condensed, sans-serif;  
+ 
+ 
+ # FietsFantastisch
+ Module2
+ 
+ JavaScript gaan we toepassen pluss wat additionele pagina's gericht op databases.
+ Tevens hebben we er een nieuw genootje bij die de plaats van Dia in zal nemen
+ 
+ De JavaScrip pagina wordt zoals CSS weer gezamelijk de HTML daar in tegen Ieder voor zich met als uitzondering de Footer en de Header
 
  
