@@ -8,9 +8,6 @@
 
 
 
-
-
-
 function Klant(naam,voornaam,klantnummer,adres,){
     this.naam = naam;
     this.voornaam = voornaam;
@@ -63,7 +60,7 @@ var fietsen = [
 
 
 
-document.querySelector(".medewerker").toString(Medewerkers[0]);
+// document.querySelector(".medewerker").toString(Medewerkers[0]);
 
 
 var probeer = document.querySelector(".medewerker");
