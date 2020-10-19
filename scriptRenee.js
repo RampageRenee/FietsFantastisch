@@ -1,3 +1,14 @@
+//MedewerkerTest = document.querySelector(".medewerker");
+
+//document.querySelector(".medewerker").innerHTML =   medewerkers[0];
+
+//MedewerkerTest.getAttribute(medewerker[0]);
+//MedewerkerTest (Medewerker[0]);
+
+
+
+
+
 
 
 function Klant(naam,voornaam,klantnummer,adres,){
@@ -12,6 +23,7 @@ function Medewerker(naam,nummer,functie){
     this.naam = naam;
     this.nummer = nummer;
     this.functie = functie;
+
 
 }
 
@@ -48,4 +60,12 @@ var fietsen = [
     new Fiets ("Imperial shuttle", "Heren", true),
     new Fiets ("USS Phoenix", "Dames", false)
 ]
-console.log(klanten);
+
+
+
+document.querySelector(".medewerker").toString(Medewerkers[0]);
+
+
+var probeer = document.querySelector(".medewerker");
+
+probeer.innerHTML = "Gegevens van Medewerker: "+ medewerkers[0];
