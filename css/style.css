@@ -323,12 +323,25 @@ input {
 .Medewerkers-hoofd{
 
 }
-.Mederwerker{
-    
+.medewerker-titel{
+    text-align: center;
 }
 
+.medwerker-sub{
+    
+}
+.block-medewerker{
+   padding: 12px;
+    border:solid 10px #46ad65;
+    margin: 2%;
+    
 
+}
 
+#medewerker-formulier, form{
+    text-align: left;
+    background-color: #c79f54;
+}
 
 /* toonfietsen opties na verhuurformulier ------------------------------------------------ */
 

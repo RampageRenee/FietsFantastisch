@@ -40,17 +40,61 @@
 
     <!-------------------------------------------------MAIN ---------------------------------------------------->
     <main class="Medewerkers-hoofd">
-        <h1>Vijf Medewerkers</h1>
+        <h1 class="medewerker-titel">Vijf Medewerkers</h1>
 
         <p>De opdracht: • Een HTML pagina laat het eerste element uit de betreffende array zien Dus de Klant pagina laat het 
             eerste element uit
         de array Klant zien etc.</p>
+        <section class = "medewerker-sub">
+            <section class = "block-medewerker">
+            <label for="medewerkerDropDown">Kies een Medewerker: </label>
+            <select id="medewerkerDropDown" >
+                <optgroup >
+                    <option>
+                        Medewerker 1
+                    </option>
+                    <option>
+                        Medewerker 2
+                    </option>
+                    <option>
+                        Medewerker 3
+                    </option>
+                    <option>
+                        Medewerker 4
+                    </option>
+                    <option>
+                        Medewerker 5
+                    </option>
+                </optgroup>
+            </select>
+            </section>
+
+            <section  class = "block-medewerker">
+            <output>
+                <h4>Gegevens van Medewerker</h4>
+               <div id = "medewerker">
+                    <p>De Plek waar de gegevens uit JS moeten komen te staan</p>
+               </div>
+
+            </output>
+            </section>
+
+
+            <section class = "block-medewerker">
+            <form id="medewerker-formulier">
+                <h4>Maak nieuwe Medewerker aan</h4>
+
+            </form>
+            </section>
+        </section>
         
-        <script>
+        <!-- <script>
+            <p>
             Medewerker();
+            </p>
         </script>
 
-        <h4 class="medewerker">Medewerker</h4>
+        <h4 class="medewerker">Medewerker</h4> -->
 
     <!------------------------Footer------------------------------------>
     <footer>
