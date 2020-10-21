@@ -371,13 +371,19 @@ input {
 
 /* FOOTER --------------------------------------------------- */
 
-.footer {
+footer .footer {
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 3;
     background: #46ad65;
-    height: 400px;
+    height: 600px;
+    max-height: 100%;
     margin: 5px;
+
 }
 
 footer .footer-section-icons {
+    display: flexbox;
     text-align: center;
     margin-top: -90px;
 }
