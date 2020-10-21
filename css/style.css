@@ -343,6 +343,11 @@ input {
     background-color: #c79f54;
 }
 
+#knop-medewerker{
+    padding: 8px;
+    margin: 8px;
+}
+
 /* toonfietsen opties na verhuurformulier ------------------------------------------------ */
 
 .titleoptiesfiets {

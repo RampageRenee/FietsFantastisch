@@ -50,23 +50,28 @@
             <label for="medewerkerDropDown">Kies een Medewerker: </label>
             <select id="medewerkerDropDown" >
                 <optgroup >
-                    <option>
+                    <option value="">
+                        -Selecteer medewerker-
+                    </option>
+                    <option value="nul">
                         Medewerker 1
                     </option>
-                    <option>
+                    <option value="een">
                         Medewerker 2
                     </option>
-                    <option>
+                    <option value="twee">
                         Medewerker 3
                     </option>
-                    <option>
+                    <option value="drie">
                         Medewerker 4
                     </option>
-                    <option>
+                    <option value="vier">
                         Medewerker 5
                     </option>
+                    <input id="knop-medewerker" type="submit" value="Haal gevevens op">
                 </optgroup>
             </select>
+            <p>Werkt nog niet.</p>
             </section>
 
             <section  class = "block-medewerker">
@@ -74,6 +79,9 @@
                 <h4>Gegevens van Medewerker</h4>
                <div id = "medewerker">
                     <p>De Plek waar de gegevens uit JS moeten komen te staan</p>
+                    <script>
+                        document.getElementById("medewerker").innerHTML = medewerkers[0].naam;
+                    </script>
                </div>
 
             </output>
@@ -85,6 +93,7 @@
                 <h4>Maak nieuwe Medewerker aan</h4>
 
             </form>
+            <p>Binnenkort verkrijgbaar!</p>
             </section>
         </section>
         

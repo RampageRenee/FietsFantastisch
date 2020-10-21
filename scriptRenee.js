@@ -1,10 +1,3 @@
-//MedewerkerTest = document.querySelector(".medewerker");
-
-//document.querySelector(".medewerker").innerHTML =   medewerkers[0];
-
-//MedewerkerTest.getAttribute(medewerker[0]);
-//MedewerkerTest (Medewerker[0]);
-
 
 
 
@@ -60,9 +53,13 @@ var fietsen = [
 
 
 
-// document.querySelector(".medewerker").toString(Medewerkers[0]);
+function knopPak () {
+Document.getElementById('knop-medewerker').addEventListner('submit' ,pakGegevens);
 
 
-var probeer = document.querySelector(".medewerker");
+function pakGegevens(event){
+    event.preventDefault();
 
-probeer.innerHTML = "Gegevens van Medewerker: "+ medewerkers[0];
+    console.log("De gegevens zijn opgehaald")
+}
+}
