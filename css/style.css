@@ -305,15 +305,15 @@ input {
     background-image: url("images\contact-map.png");
 }
 
-/*------------------------------vijf Acccesoires---------------------------------------------------*/
+/*------------------------------vijf Acccesoires-----------------TARIK----------------------------------*/
 
 
 
-/*------------------------------vijf Fietsen---------------------------------------------------*/
+/*------------------------------ Fietsen-------------AB --------------------------------------*/
 
 
 
-/*-----------------------------vijf Klanten---------------------------------------------------*/
+/*-----------------------------vijf Klanten---------------------FILI------------------------------*/
 
 
 
@@ -347,6 +347,26 @@ input {
     padding: 8px;
     margin: 8px;
 }
+
+/*------------------------------Inlog Pagina-----------------RENEE----------------------------------*/
+.inlog-ruimte{
+    margin: 30px;
+}
+
+.inlog-titel{
+    text-align: center;
+}
+.inlog-label{
+    cursor: pointer;
+}
+input[type=text]:hover{
+    border-color:#46ad65 ;
+    border-width: 1px;
+}
+input[type=text]:focus{
+    border: 1px solid #46ad65;
+}
+
 
 /* toonfietsen opties na verhuurformulier ------------------------------------------------ */
 
