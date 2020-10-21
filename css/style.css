@@ -185,7 +185,7 @@ li:first-child {
     font-weight: 700;
 }
  
-#verhuur_tabel, form {
+#verhuur_tabel {
     background-color:  #46ad65;
     margin: 5px;
     text-align: center;
@@ -338,7 +338,7 @@ input {
 
 }
 
-#medewerker-formulier, form{
+#medewerker-formulier, {
     text-align: left;
     background-color: #c79f54;
 }
@@ -359,10 +359,12 @@ input {
 
 .toon-fietsen {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px;
     text-align: center;
 }
+
+.toon-fietsenform 
 
 .submitbtnopties {
     text-align: center;
