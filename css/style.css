@@ -39,6 +39,9 @@ ul {
     overflow: hidden;
     background-color:  #46ad65;
     border-radius: 20px;
+    max-width: 2000px;
+    width: 100%;
+
 }
 
 li {
@@ -69,9 +72,8 @@ li {
     border-right: 2px solid #bbbbbb;
 }
 
-li:first-child {
-    border-right: none;
-}
+
+
 
 /* logo met achtergrond footer Ab--------------------------------------------------------- */
 
@@ -212,7 +214,7 @@ input {
 
 
 
-/* welkom teksten over ons pagina ----------------------------------------------------------------*/
+/* over ons pagina ----------------------------------------------------------------*/
 
 
 .content-wrap1 {
@@ -222,11 +224,9 @@ input {
 }
 
 
-/* welkom foto's over ons pagina----------------------------------------------------------- */
-
 .overons_fotos {
   display: grid;  
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-content: center;  
 }
 
@@ -338,12 +338,12 @@ input {
 
 }
 
-#medewerker-formulier, {
+#medewerker-formulier {
     text-align: left;
     background-color: #c79f54;
 }
 
-#knop-medewerker{
+#knop-medewerker {
     padding: 8px;
     margin: 8px;
 }
@@ -359,14 +359,13 @@ input {
 
 .toon-fietsen {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     text-align: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
 }
 
-.toon-fietsenform 
-
-.submitbtnopties {
+.submit {
     text-align: center;
 }
 
@@ -411,6 +410,13 @@ footer .footermenu {
 footer, img {
     text-align: center;
 }
+
+/* experimenteel footeropties ----------------- */
+
+
+
+
+
 /*-----------------------------------Responsive------------------------------------------------------------ */
 
 @media screen (max-width: 700px) {
