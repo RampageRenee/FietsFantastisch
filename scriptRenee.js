@@ -63,3 +63,5 @@ function pakGegevens(event){
     console.log("De gegevens zijn opgehaald")
 }
 }
+
+/*--------------------------------------------------LOG IN -----------------------------------------------------------*/

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="scriptRenee.js"></script>
     <title>Biker - Inlog pagina</title>
 </head>
 
@@ -38,30 +39,31 @@
 
 
     <!-------------------------------------------------MAIN ---------------------------------------------------->
-    <main>
-        <section class="inlog-ruimte"></section>
+    <main class="inlog-main">
+        
         <h3 class="inlog-titel">Log in bij Biker !</h3>
 
-        <form>
-            <fieldset>
-                <legend>Voer hier uw gegevens in:</legend>
-                <section>
-                    <label class="inlog-label" for="veld1" >Gebruikers naam:
+        <form class="inlog-venster">
+            <fieldset >
+                <legend class="inlog-gegevens">Voer hier uw gegevens in:</legend>
+                
+                    <label class="inlog-naam" for="veld1" accesskey="n">Gebruikers naam:
                         <input type="text" id="veld1" autofocus placeholder="AnakinSkywalker41BBY">
                     </label>
-                    <label class="inlog-label" for="veld2">Paswoord:
-                        <input type="text" id="veld2" placeholder="DavrosRulezz">
+                
+                
+                    <label class="inlog-paswoord" for="veld2" accesskey="P">Paswoord:
+                        <input type="password" id="veld2" placeholder="Davr0s_*Rul3zz*">
                     </label>
-                </section>
-            </fieldset>
-
-            
+                
+            </fieldset>  
         </form>
 
-        <input id="knop-medewerker" type="submit" value="Medewerker Log in">
-        <input id="knop-medewerker" type="submit" value="Klant Log in">
+        <section class="inlog-knop1" >
+            <a  href="vijfMedewerkers.html" ><input id="knop-medewerker" type="submit" accesskey="M" value="Medewerker Log in"></a></section>
+        <section class="inlog-knop2">
+            <a  href="vijfKlanten.html"><input id="knop-medewerker" type="submit" accesskey="K" value="Klant Log in"></a></section>
         
-
 
 
     </main>
