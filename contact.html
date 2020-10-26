@@ -7,6 +7,10 @@
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type='text/javascript'
+    src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key= Ao4NiMukSnNPQLargdtRVYiiHxyulxPzCGCxSF7CJWNO7BkFipffBSgPFvwbp68C'
+    async defer></script>
+    <script src="scriptRenee.js" async></script>
 <title>Contact pagina Bikerhaaglanden</title>
 </head>
 
@@ -37,7 +41,8 @@
         <h1 class="space">Neem gerust contact met ons op</h1>
         <section class="contact-box">
         <section class="contact" class="locatie">
-            <p><a href="https://kingfishertours.com/fietstocht-egypte-luxor/"><img class="image-contact" src="images\contact-map.png" alt="map" width="230px" height="230px" ></a></p>
+            <div id="myMap" style='position:relative;width:230px;height:230px;'></div>
+            <p></p>
         </section>
         <section class="contact" class="Email">
             <p><a href= "mailto: fietsfannaat@achterwiel.nl"><img class="image-contact" src="images\contact-mail-icon.png" alt="email" width="230px" height="230px" ></a></p>
@@ -46,7 +51,9 @@
             <p><a href="https://www.nibud.nl/consumenten/telefoonkosten-buitenland/"><img class="image-contact" src="images\contact-telefoon.jpg" alt="telefoon" width="230px" height="230px"></a></p>
         </section>
     </section>
+        
     </main>
+
 </body>
 <footer>
     <section class="footer">
