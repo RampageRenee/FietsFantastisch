@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="scriptRenee.js"></script>
+    <script  src="scriptRenee.js" async></script>
     <title>Biker - Medewerkers</title>
 </head>
 
@@ -46,7 +46,7 @@
             eerste element uit
         de array Klant zien etc.</p>
         <section class = "medewerker-sub">
-            <section class = "block-medewerker1">
+            <section class = "block-medewerker1" id="keuze">
             <label  for="medewerkerDropDown">Kies een Medewerker: </label>
             <select class="inlog-label" id="medewerkerDropDown" >
                 <optgroup >
@@ -78,9 +78,10 @@
             <output>
                 <h4>Gegevens van Medewerker</h4>
                <div id = "medewerker">
-                    <p>De Plek waar de gegevens uit JS moeten komen te staan</p>
+                    <p >De Plek waar de gegevens uit JavaScript moeten komen te staan, godver de godver.
+                        Gisteren stond het er nog..... Waaaaar oooh Waaar ben je gebleven??????</p>
                     <script>
-                        document.getElementById("medewerker").innerHTML = medewerkers[0].naam;
+                       document.getElementById("medewerker").innerHTML = medewerkers[0].naam;
                     </script>
                </div>
 

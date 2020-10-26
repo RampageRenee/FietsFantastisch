@@ -52,16 +52,68 @@ var fietsen = [
 ]
 
 
+/*--------------------------------------------------MEDEWERKERS-----------------------------------------------------------*/
+const drop = document.getElementById('knop-medewerker');
+//const test = document.getElementById('mederwerker');
+//test.innerHTML = medewerkers[0].naam;
 
-function knopPak () {
-Document.getElementById('knop-medewerker').addEventListner('submit' ,pakGegevens);
+//var gegevens = document.getElementById('medewerker').innerHTML;
+//gegevens = medewerkers[0];
 
 
-function pakGegevens(event){
-    event.preventDefault();
+//Function(){
+    "use strict";
 
-    console.log("De gegevens zijn opgehaald")
-}
-}
+    document.addEventListener('DOMContentLoaded', function(){
+        let status = document.getElementById('medewerkerDropDown');
+
+
+
+        var ophaalKnop = document.getElementById('knop-medewerker');
+        ophaalKnop.disabled = true;
+
+        status.addEventListener('change', function(){
+            if (status.value === "") {
+                ophaalKnop.disabled = true;
+            }else{
+                ophaalKnop.disabled = false;
+            }
+        });
+
+
+        function haalGegevens() {
+
+            let deKeuze = status.value;
+
+            if (deKeuze === "nul") {
+                console.log("dit is de eerste optie")
+            } else if (deKeuze === "een") {
+                console.log("de 2e optieeee!")
+            } else if (deKeuze === "twee") {
+                console.log("numerrrrrr drieieieieiei")
+            } else if (deKeuze === "drie") {
+                console.log("jawelll nummer vier")
+            } else {
+                console.log("ken niet anders dan vijf want je kunt niet op de knop drukken als en kies een optie staat!")
+            };
+        }
+
+        
+        drop.addEventListener("click", haalGegevens, false);
+
+
+
+    })
+//}
+
+
+
+    
+   
+    
+    
+
+
+
 
 /*--------------------------------------------------LOG IN -----------------------------------------------------------*/
