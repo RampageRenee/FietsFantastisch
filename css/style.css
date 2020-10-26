@@ -25,6 +25,12 @@ html {
     font-family: 'acumin-pro-semi-condensed', sans-serif;
 }
 
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height] 
+}
+
 /* Top navigatie menu aan de hand van wireframe hieronder AB ---------------------------------------- */
 
 header {
