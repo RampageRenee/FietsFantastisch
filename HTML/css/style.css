@@ -25,12 +25,6 @@ html {
     font-family: 'acumin-pro-semi-condensed', sans-serif;
 }
 
-body {
-    min-height:100%; 
-    position:relative; 
-    padding-bottom:[footer-height] 
-}
-
 /* Top navigatie menu aan de hand van wireframe hieronder AB ---------------------------------------- */
 
 header {
@@ -475,8 +469,13 @@ input[type=password]:focus{
     grid-row-gap: 1em;
 }
 
-.submit {
-    text-align: center;
+.submit123 {
+    display: inline;
+    align-content: center;
+    padding: 12px;
+    margin: 20px;
+    font-weight: 700;
+
 }
 
 /* FOOTER --------------------------------------------------- */
