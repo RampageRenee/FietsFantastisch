@@ -61,6 +61,11 @@ const drop = document.getElementById('knop-medewerker');
 //gegevens = medewerkers[0];
 
 
+    var paard = medewerkers[0].toString();
+    document.getElementById('medewerker').innerHTML = paard;
+
+
+
 //Function(){
     "use strict";
 
