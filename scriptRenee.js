@@ -36,9 +36,9 @@ var klanten = [
 ]
 
 var medewerkers = [
-    new Medewerker("Ikora",236,"Directeur"),
+    ["Ikora",236,"Directeur"],
     new Medewerker("Cayde-6", 006, "Monteur"),
-    new Medewerker("Zavala",237,"Balie"),
+    new Medewerker(["Zavala",237,"Balie"]),
     new Medewerker("Lord Shaxx", 332, "Monteur"),
     new Medewerker("Xur", 159, "Balie")
 ]
@@ -61,8 +61,16 @@ const drop = document.getElementById('knop-medewerker');
 //gegevens = medewerkers[0];
 
 
-    var paard = medewerkers[0].naam.toString();
-    document.getElementById('medewerker').innerHTML = paard;
+   // var paard = medewerkers[0].toString();
+   // document.getElementById('medewerker').innerHTML = paard;
+
+var paard = medewerkers.join();
+document.getElementById('medewerker').innerHTML = paard;
+console.log(medewerkers[0]);
+console.log(medewerkers[1]);
+console.log(medewerkers[2]);
+
+
 
 
 
