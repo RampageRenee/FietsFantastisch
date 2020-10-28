@@ -70,6 +70,7 @@ var fietsen = [
 
 /*--------------------------------------------------MEDEWERKERS-----------------------------------------------------------*/
 const drop = document.getElementById('knop-medewerker');
+
 //const test = document.getElementById('mederwerker');
 //test.innerHTML = medewerkers[0].naam;
 
@@ -202,14 +203,6 @@ const box = document.getElementById("passzichtbaar");
 
 box = console.log("nu dan??");
 
-//box.addEventListener("change" ,function(){
-//  let veld = document.getElementById("veld2");
-
-//if(true){
-//  veld.type = "text"
-//console.log('ik ben binnen');
-//}
-//})
 
 box.addEventListener("change", e => {
     let veld = document.getElementById("veld2");
