@@ -6,9 +6,8 @@
 
 /*--------------------------------------------------AB-----------------------------------------------------------*/
 
-
 var fietsAb;
-fietsAb = ['herenfiets', 'damesfiets', 'elektrischefiets', 'elektrischexfiets', 'elektrischesuperfiets']; 
+fietsAb = ['herenfiets', 'damesfiets', 'elektrischefiets', 'elektrischesuperfiets', 'elektrischexsuperfiets']; 
 
 console.log(fietsAb);
 
