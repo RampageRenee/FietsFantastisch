@@ -7,6 +7,12 @@
 /*--------------------------------------------------AB-----------------------------------------------------------*/
 
 
+var fietsAb;
+fietsAb = ['herenfiets', 'damesfiets', 'elektrischefiets', 'elektrischexfiets', 'elektrischesuperfiets']; 
+
+console.log(fietsAb);
+
+
 /*-------------------------------------------------RENEE-----------------------------------------------------------*/
 
 
