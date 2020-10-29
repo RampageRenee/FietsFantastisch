@@ -73,7 +73,7 @@ console.log(medewerkers[2]);
 
 const keuzeBalk = document.getElementById("medewerkerDropDown");
 
-for (var i = 0; i > medewerkers.length; ++i){
+for (var i = 0; i < medewerkers.length; ++i){
     keuzeBalk[keuzeBalk.length]= new Option(medewerkers[i],medewerkers[i]);
 }
 
