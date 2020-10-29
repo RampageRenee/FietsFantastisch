@@ -33,15 +33,6 @@ function Medewerker(naam, nummer, functie) {
 
 }
 
-function Fiets(merk, type, electrisch) {
-    this.merk = merk;
-    this.type = type;
-    this.electrisch = electrisch;
-}
-
-function Accesoire(naam) {
-    this.naam = naam;
-}
 
 var klanten = [
     new Klant("Weasley", "Ron", 1, "Den Haag"),
@@ -59,14 +50,6 @@ var medewerkers = [
     new Medewerker("Xur", 159, "Balie")
 ]
 
-var fietsen = [
-    new Fiets("YT-1300 light", "Dames", false),
-    new Fiets("Star Destroyer", "Heren", false),
-    new Fiets("Tie-fighter", "Dames", true),
-    new Fiets("Imperial shuttle", "Heren", true),
-    new Fiets("USS Phoenix", "Dames", false)
-]
-
 
 /*--------------------------------------------------MEDEWERKERS-----------------------------------------------------------*/
 const drop = document.getElementById('knop-medewerker');
@@ -78,22 +61,26 @@ const drop = document.getElementById('knop-medewerker');
 //gegevens = medewerkers[0];
 
 
-// var paard = medewerkers[0].toString();
-// document.getElementById('medewerker').innerHTML = paard;
-
-var paard = medewerkers.join();
+var paard = medewerkers[0].toString();
 document.getElementById('medewerker').innerHTML = paard;
+
+//var paard = medewerkers.join();
+//document.getElementById('medewerker').innerHTML = paard;
 console.log(medewerkers[0]);
 console.log(medewerkers[1]);
 console.log(medewerkers[2]);
 
 
+const keuzeBalk = document.getElementById("medewerkerDropDown");
 
+for (var i = 0; i > medewerkers.length; ++i){
+    keuzeBalk[keuzeBalk.length]= new Option(medewerkers[i],medewerkers[i]);
+}
 
 
 //Function(){
 "use strict";
-
+/*
 document.addEventListener('DOMContentLoaded', function () {
     let status = document.getElementById('medewerkerDropDown');
 
