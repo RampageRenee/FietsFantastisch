@@ -11,9 +11,7 @@ fietsAb = ['herenfiets', 'damesfiets', 'elektrischefiets', 'elektrischesuperfiet
 
 console.log(fietsAb);
 
-
 /*-------------------------------------------------RENEE-----------------------------------------------------------*/
-
 
 
 function Klant(naam, voornaam, klantnummer, adres,) {
