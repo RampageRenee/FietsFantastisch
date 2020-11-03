@@ -361,6 +361,9 @@ input {
     
 
 }
+.medewerker-inputbalk{
+    margin: 5px;
+}
 
 #medewerker-formulier {
     text-align: left;
