@@ -26,8 +26,6 @@ function Medewerker(naam, nummer, functie) {
     this.naam = naam;
     this.nummer = nummer;
     this.functie = functie;
-
-
 }
 
 
@@ -40,9 +38,9 @@ var klanten = [
 ]
 
 var medewerkers = [
-    ["Ikora", 236, "Directeur"],
+    new Medewerker("Ikora", 236, "Directeur"),
     new Medewerker("Cayde-6", 006, "Monteur"),
-    new Medewerker(["Zavala", 237, "Balie"]),
+    new Medewerker("Zavala", 237, "Balie"),
     new Medewerker("Lord Shaxx", 332, "Monteur"),
     new Medewerker("Xur", 159, "Balie")
 ]
@@ -52,17 +50,16 @@ var medewerkers = [
 const drop = document.getElementById('knop-medewerker');
 
 //const test = document.getElementById('mederwerker');
-//test.innerHTML = medewerkers[0].naam;
-
-//var gegevens = document.getElementById('medewerker').innerHTML;
-//gegevens = medewerkers[0];
+//test.innerHTML = medewerkers[3].naam;
 
 
-var paard = medewerkers[0].toString();
-document.getElementById('medewerker').innerHTML = paard;
+var pony = medewerkers[0].naam;
+var paard = medewerkers[0].nummer;
+var eekhoorn = medewerkers[0].functie;
+document.getElementById('medewerker-naam').innerHTML = pony;
+document.getElementById('medewerker-nummer').innerHTML = paard;
+document.getElementById('medewerker-functie').innerHTML = eekhoorn;
 
-//var paard = medewerkers.join();
-//document.getElementById('medewerker').innerHTML = paard;
 console.log(medewerkers[0]);
 console.log(medewerkers[1]);
 console.log(medewerkers[2]);
@@ -71,7 +68,7 @@ console.log(medewerkers[2]);
 const keuzeBalk = document.getElementById("medewerkerDropDown");
 
 for (var i = 0; i < medewerkers.length; ++i){
-    keuzeBalk[keuzeBalk.length]= new Option(medewerkers[i],medewerkers[i]);
+    keuzeBalk[keuzeBalk.length]= new Option(medewerkers[i].naam,medewerkers[i]);
 }
 
 
