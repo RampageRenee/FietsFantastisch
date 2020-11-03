@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css"> <!--onze font worden in de stylesheet gelinkd-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--onze inconen onder aan de pagina worden hierdoor getoond-->
     <link rel="stylesheet" href="./css/style.css">
-    <script src="script.js" async></script>
-    
+    <script src="script.js" defer></script>
     <title>Kies uw fiets</title>
 </head>
 <body>
@@ -63,7 +62,7 @@
             <p>De Elektrische fiets: €45 per dag</p>
             <label for="hoeveel_elekfietsen"><p>Aantal:</p></label>
                 <input type="number" name="aantalelekfietsen" 
-                id="hoeveel_elekfietsen"
+                id="hoeveel_eleksuperXfietsen"
                 step="1" max="2" min="0">
             <!-- <p style="color: red;"><strong>Nog 2 fietsen beschikbaar!</strong></p> -->
         </section>
@@ -71,9 +70,9 @@
         <section>
             <img src="./images/Elektrischefiets.jpg" alt="">
             <p>De Elektrische super fiets: €45 per dag</p>
-            <label for="hoeveel_elekfietsen"><p>Aantal:</p></label>
+            <label for="hoeveel_eleksuperfietsen"><p>Aantal:</p></label>
                 <input type="number" name="aantalelekfietsen" 
-                id="hoeveel_elekfietsen"
+                id="hoeveel_eleksuperfietsen"
                 step="1" max="2" min="0">
             <!-- <p style="color: red;"><strong>Nog 2 fietsen beschikbaar!</strong></p> -->
         </section>
@@ -81,10 +80,12 @@
         <section>
                <img src="./images/Elektrischefiets.jpg" alt="">
             <p>De Elektrische super X fiets: €45 per dag</p>
-            <label for="hoeveel_elekfietsen"><p>Aantal:</p></label>
+            <label for="hoeveel_elekxfietsen"><p>Aantal:</p></label>
                 <input type="number" name="aantalelekfietsen" 
-                id="hoeveel_elekfietsen"
+                id="hoeveel_elekxfietsen"
                 step="1" max="2" min="0">
+
+
             <!-- <p style="color: red;"><strong>Nog 2 fietsen beschikbaar!</strong></p> -->
         </section>
 
@@ -94,7 +95,13 @@
     
     </form>
 
-   
+    <div>
+        <select name="soortenfiets" id="Soorten_fietsen">
+            <option value="DamesFiets">Dames Fiets</option>
+            <option value="HerenFiets">Heren Fiets</option>
+            <option value="Elektrischefiets">Elektrische Fiets</option>
+        </select>
+    </div>
  
 
     <footer>
