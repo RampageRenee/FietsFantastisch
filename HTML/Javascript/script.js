@@ -66,11 +66,22 @@ console.log(medewerkers[2]);
 
 
 const keuzeBalk = document.getElementById("medewerkerDropDown");
-
+//function
 for (var i = 0; i < medewerkers.length; ++i){
     keuzeBalk[keuzeBalk.length]= new Option(medewerkers[i].naam,medewerkers[i]);
 }
+///eventlistner click , that  i  innerhtml id naam, id nummer , id functie
 
+document.addEventListener('click', function(){
+    let testties = keuzeBalk.value;
+    console.log(testties);
+
+    let probeer = testties.value;
+    console.log (probeer);
+  
+
+   
+})
 
 //Function(){
 "use strict";
