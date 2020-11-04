@@ -28,7 +28,7 @@ var soortenFietsen = [
 console.log(soortenFietsen[3].hoogte);
 
 
-// Geen idee hoe de dropdown menu te creeren, staat hier ergens meer uitleg over?
+// Geen idee hoe de dropdown menu te creeren in javascript, staat hier ergens meer uitleg over?
 // Kan het niet terug vinden in de linked in course
 
 /*-------------------------------------------------RENEE-----------------------------------------------------------*/
