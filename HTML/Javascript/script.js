@@ -73,7 +73,7 @@ const drop = document.getElementById('knop-medewerker');
 //const test = document.getElementById('mederwerker');
 //test.innerHTML = medewerkers[3].naam;
 
-
+//-----------------------------verander[0] in let uit click value event--------------heel onderstaand dan ook in plaatsen (local)
 var pony = medewerkers[0].naam;
 var paard = medewerkers[0].nummer;
 var eekhoorn = medewerkers[0].functie;
@@ -93,6 +93,8 @@ for (var i = 0; i < medewerkers.length; ++i){
 }
 ///eventlistner click , that  i  innerhtml id naam, id nummer , id functie
 
+
+
 document.addEventListener('click', function(){
     let testties = keuzeBalk.value;
     console.log(testties);
@@ -100,8 +102,6 @@ document.addEventListener('click', function(){
     let probeer = testties.value;
     console.log (probeer);
   
-
-   
 })
 
 //Function(){
@@ -149,9 +149,18 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 //}
 
+----*/
+var deNaam = document.getElementById('med-naam-input');
+var hetNummer = document.getElementById('med-nummer-input');
+var deFunctie = document.getElementById('med-functie-input');
 
+function voegtoe(){
+    let alles = deNaam +","+  hetNummer + "," + deFunctie;
+    medewerkers.push(new Medewerker(alles));
+}
 
-
+var medVerzend = document.getElementById('med-verzendknop');
+medVerzend.addEventListener('submit', voegtoe);
 
 
 /*----------------------------------------Contact----------------------------------------------------------*/
