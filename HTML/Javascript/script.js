@@ -25,12 +25,12 @@ var soortenFietsen = [
 ]; 
 
 
-console.log(soortenFietsen[3].hoogte);
+console.log(soortenFietsen[2].merk);
 
 
 
 // Geen idee hoe de dropdown menu te creeren in javascript, staat hier ergens meer uitleg over?
-// Kan het niet terug vinden in de linked in course of de aangereikte matriaalen 
+// Kan het niet terug vinden in de linked in course of de aangereikte matriaalen
 
 /*-------------------------------------------------RENEE-----------------------------------------------------------*/
 
