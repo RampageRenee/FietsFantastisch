@@ -161,7 +161,7 @@ function voegtoe(){
 
 var medVerzend = document.getElementById('med-verzendknop');
 medVerzend.addEventListener('submit', voegtoe);
-
+//////////////////STOP DE RELOAD overrideofzo wat was het ookalweer???
 
 /*----------------------------------------Contact----------------------------------------------------------*/
 
