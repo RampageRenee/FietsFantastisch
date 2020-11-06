@@ -26,6 +26,8 @@ function Fietsen(merk,type,soort,hoogte,aantal){
     this.aantal = aantal;   
 }
 
+// this.foto  
+
 
 var soortenFietsen = [
     new Fietsen("Van Moof", "X01", "Heren fiets",  62, 12),
@@ -38,6 +40,8 @@ var soortenFietsen = [
 
 console.log(soortenFietsen[2].merk);
 
+// event select waarvoor te gebruiken 
+// 
 
 
 // Geen idee hoe de dropdown menu te creeren in javascript, staat hier ergens meer uitleg over?
