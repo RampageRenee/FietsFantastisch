@@ -30,4 +30,6 @@ for (var i = 0; i < soortenFietsen.length; i++){
 console.log(soortenFietsen[1]);
 
 
+
+
 // event select waarvoor te gebruiken 
