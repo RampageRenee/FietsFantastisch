@@ -46,75 +46,32 @@ document.getElementById('medewerker-naam').innerHTML = pony;
 document.getElementById('medewerker-nummer').innerHTML = paard;
 document.getElementById('medewerker-functie').innerHTML = eekhoorn;
 
-console.log(medewerkers[0]);
-console.log(medewerkers[1]);
-console.log(medewerkers[2]);
 
 
 const keuzeBalk = document.getElementById("medewerkerDropDown");
 //function
 for (var i = 0; i < medewerkers.length; ++i) {
     keuzeBalk[keuzeBalk.length] = new Option(medewerkers[i].naam, medewerkers[i]);
+    
 }
+//for (var e=0; e< medewerkers.length; ++e){    
+//}
+
 ///eventlistner click , that  i  innerhtml id naam, id nummer , id functie
+console.log(Option);
 
 
-
-document.addEventListener('click', function () {
+keuzeBalk.addEventListener('click', function () {
     let testties = keuzeBalk.value;
     console.log(testties);
 
-    let probeer = testties.value;
-    console.log(probeer);
+    //let probeer = [testties].naam;
+    //console.log(probeer);
 
 })
 
-//Function(){
-"use strict";
-/*
-document.addEventListener('DOMContentLoaded', function () {
-    let status = document.getElementById('medewerkerDropDown');
 
 
-
-    var ophaalKnop = document.getElementById('knop-medewerker');
-    ophaalKnop.disabled = true;
-
-    status.addEventListener('change', function () {
-        if (status.value === "") {
-            ophaalKnop.disabled = true;
-        } else {
-            ophaalKnop.disabled = false;
-        }
-    });
-
-
-    function haalGegevens() {
-
-        let deKeuze = status.value;
-
-        if (deKeuze === "nul") {
-            console.log("dit is de eerste optie")
-        } else if (deKeuze === "een") {
-            console.log("de 2e optieeee!")
-        } else if (deKeuze === "twee") {
-            console.log("numerrrrrr drieieieieiei")
-        } else if (deKeuze === "drie") {
-            console.log("jawelll nummer vier")
-        } else {
-            console.log("ken niet anders dan vijf want je kunt niet op de knop drukken als en kies een optie staat!")
-        };
-    }
-
-
-    drop.addEventListener("click", haalGegevens, false);
-
-
-
-})
-//}
-
-----*/
 var deNaam = document.getElementById('med-naam-input');
 var hetNummer = document.getElementById('med-nummer-input');
 var deFunctie = document.getElementById('med-functie-input');
@@ -188,7 +145,7 @@ function GetMap() {
 
 const box = document.getElementById("passzichtbaar");
 
-box = console.log("nu dan??");
+//box = console.log("nu dan??");
 
 
 box.addEventListener("change", e => {
