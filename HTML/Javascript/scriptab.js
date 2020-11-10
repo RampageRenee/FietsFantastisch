@@ -1,4 +1,4 @@
-
+// constructor voor fietsen
 function Fietsen(merk,type,soort,hoogte,aantal,image){
     this.merk = merk;
     this.type = type;
@@ -7,10 +7,6 @@ function Fietsen(merk,type,soort,hoogte,aantal,image){
     this.aantal = aantal;   
     this.image = image;
 }
-
-// this.foto aan de constructor toevoegen 
-// Het uiteindelijke resultaat moet alles zodra je een fiets selecteerd 
-// foto + gegevens laten zien
 
 
 // array met de Fiets objects
@@ -45,7 +41,7 @@ function hetDropDownMenu(){
     }
 }
 
-
+// functie voor het toevoegen van de images
 function voegFotoToe(y){
     document.getElementById("fietsFoto").innerHTML="";
     var img = document.createElement("img");
@@ -53,9 +49,6 @@ function voegFotoToe(y){
     var src = document.getElementById("fietsFoto");
     src.appendChild(img);
 }
-
-
-
 
 
 // for loop gebruiken om in de dropdown menu het merk van de objecten uit de array
