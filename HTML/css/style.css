@@ -309,7 +309,41 @@ input {
 
 
 
-/*------------------------------ Fietsen-------------AB --------------------------------------*/
+/*------------------------------ fietsen------AB --------------------------------------*/
+
+
+
+
+.grid-container-main {
+    display: grid;
+}
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+
+
+
+.c {
+    text-align: center;
+}
+
+
+#dropDownMenu {
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: large;
+    background-color:  #c46952
+}
+
 
 
 
