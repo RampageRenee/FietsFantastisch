@@ -31,18 +31,60 @@
         <a href="./index.html" target="_blank"><img src="./images/Biker.com main background .png" 
             alt="logo van biker haaglanden" width="1300" height="400"></a>
     </section>   
-    
-    <!-- <p class="titleoptiesfiets">Voor de aangegeven datum kunt u kiezen uit de volgende fietsen:</p> -->
+
     
     <main>
-        <section>
-            <div class="container" style="text-align: center;">
-                <h3>Kies uit de volgende fietsen</h3>
-                <select id="select"  onchange="getWaarden()">
-                    <option value="Fietsen">Fietsen</option>
-                </select>
-                <h2>Resultaat</h2>
-            </div>
+        <section class="grid-container-main">
+            <select id="dropDownMenu" onchange="hetDropDownMenu()">
+                <option value="0">Heren fiets</option>
+                <option value="1">Dames fiets</option>
+                <option value="2">Elektrische fiets</option>
+                <option value="3">Elektrische super fiets</option>
+                <option value="4">Elektrische Super X fiets</option>
+            </select>
+        </section>
+
+        <section class="grid-container">
+            <article class="grid-item">
+                <div class="flex-container">
+                    <div class="merk">
+                        <h4>Merk Fiets:</h4>
+                        <div id="fietsMerk">Fiets Merk</div>                      
+                    </div>
+                    <div class="type">
+                        <h4>Merk type:</h4>
+                        <div id="fietsType">Fiets Type</div>
+                    </div>
+                </div>
+            </article>
+            <article class="grid-item">
+                <h4>Foto fiets:</h4>
+                <div id="fietsFoto"></div>
+            </article>
+        </section>
+
+
+
+
+
+
+
+
+
+<!-- 
+        <section class="grid-container">
+                <div class="flex-container">
+                    <h3>Kies uit de volgende fietsen</h3>
+                    <select id="select">
+                        <option value="Fietsen">Fietsen</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                    <h2>Resultaat</h2>
+                </div>
         </section>
 
         <div style="text-align: center;">
@@ -52,7 +94,7 @@
         <div style="text-align: center;">
             <input type="text">
             <input class="submit" type="submit" value="Verzend gegevens">
-        </div>
+        </div> -->
 
     </main>
 
