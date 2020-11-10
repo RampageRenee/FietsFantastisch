@@ -38,18 +38,21 @@
         <section>
             <div class="container" style="text-align: center;">
                 <h3>Kies uit de volgende fietsen</h3>
-                <select id="select">
+                <select id="select"  onchange="getWaarden()">
                     <option value="Fietsen">Fietsen</option>
                 </select>
                 <h2>Resultaat</h2>
             </div>
         </section>
-<!-- 
-        <div>
+
+        <div style="text-align: center;">
+            <p  id="showresults"></p>
+        </div>
+
+        <div style="text-align: center;">
             <input type="text">
-            <button>Voeg toe</button>
-            <ul></ul>
-        </div> -->
+            <input class="submit" type="submit" value="Verzend gegevens">
+        </div>
 
     </main>
 
