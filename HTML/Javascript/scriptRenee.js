@@ -46,87 +46,73 @@ document.getElementById('medewerker-naam').innerHTML = pony;
 document.getElementById('medewerker-nummer').innerHTML = paard;
 document.getElementById('medewerker-functie').innerHTML = eekhoorn;
 
-console.log(medewerkers[0]);
-console.log(medewerkers[1]);
-console.log(medewerkers[2]);
-
+var medSleutel = medewerkers.keys();
 
 const keuzeBalk = document.getElementById("medewerkerDropDown");
-//function
+
 for (var i = 0; i < medewerkers.length; ++i) {
-    keuzeBalk[keuzeBalk.length] = new Option(medewerkers[i].naam, medewerkers[i]);
-}
-///eventlistner click , that  i  innerhtml id naam, id nummer , id functie
-
-
-
-document.addEventListener('click', function () {
-    let testties = keuzeBalk.value;
-    console.log(testties);
-
-    let probeer = testties.value;
-    console.log(probeer);
-
-})
-
-//Function(){
-"use strict";
-/*
-document.addEventListener('DOMContentLoaded', function () {
-    let status = document.getElementById('medewerkerDropDown');
-
-
-
-    var ophaalKnop = document.getElementById('knop-medewerker');
-    ophaalKnop.disabled = true;
-
-    status.addEventListener('change', function () {
-        if (status.value === "") {
-            ophaalKnop.disabled = true;
-        } else {
-            ophaalKnop.disabled = false;
-        }
-    });
-
-
-    function haalGegevens() {
-
-        let deKeuze = status.value;
-
-        if (deKeuze === "nul") {
-            console.log("dit is de eerste optie")
-        } else if (deKeuze === "een") {
-            console.log("de 2e optieeee!")
-        } else if (deKeuze === "twee") {
-            console.log("numerrrrrr drieieieieiei")
-        } else if (deKeuze === "drie") {
-            console.log("jawelll nummer vier")
-        } else {
-            console.log("ken niet anders dan vijf want je kunt niet op de knop drukken als en kies een optie staat!")
-        };
+    let a = medewerkers[i].naam;
+    let b = medewerkers[i];
+    keuzeBalk[keuzeBalk.length] = new Option(a, b);
+    console.log(a);
+    console.log(b);
+    var z= a;
+    
+    function Jeezus (){
+    addEventListener('select' ,function(){
+        var pakLijstNummer = z;
+        return pakLijstNummer;
+    })
     }
 
+}
 
-    drop.addEventListener("click", haalGegevens, false);
+
+///eventlistner click , that  i  innerhtml id naam, id nummer , id functie
+console.log(Option);
+
+// function geefMedLijst(lijstVanSleutels){
+//     let waardeSelectie = lijstVanSleutels;
+//     if(empty(waardeSelectie)){
+//         document.getElementById('medewerkerDropDown').value;
+//     }
+//     pony;
+//     paard;
+//     eekhoorn;
+// }
 
 
+
+keuzeBalk.addEventListener('change', function () {
+    let testties = z;
+    console.log(testties);
+
+    
+    //return geefMedLijst();
+    //for (let [key, value] of Object.entries(testties)) {  console.log(key,value) };
+
+    //let probeer = [testties].naam;
+    //console.log(probeer);
 
 })
-//}
 
-----*/
-var deNaam = document.getElementById('med-naam-input');
-var hetNummer = document.getElementById('med-nummer-input');
-var deFunctie = document.getElementById('med-functie-input');
+
+
+var deNaam = document.getElementById('med-naam-input').value;
+var hetNummer = document.getElementById('med-nummer-input').value;
+var deFunctie = document.getElementById('med-functie-input').value;
 
 function voegtoe() {
-    let alles = deNaam + "," + hetNummer + "," + deFunctie;
-    medewerkers.push(new Medewerker(alles));
+    let naam = deNaam;
+    let num = hetNummer;
+    let func = deFunctie;
+    medewerkers.push(new Medewerker(naam,num,func));
 }
 
 var medVerzend = document.getElementById('med-verzendknop');
-medVerzend.addEventListener('submit', voegtoe);
-//////////////////STOP DE RELOAD overrideofzo wat was het ookalweer???
+medVerzend.addEventListener('onclick', voegtoe);
+
+
 
 /*----------------------------------------Contact----------------------------------------------------------*/
 
@@ -186,9 +172,9 @@ function GetMap() {
 
 /*--------------------------------------------------LOG IN -----------------------------------------------------------*/
 
-const box = document.getElementById("passzichtbaar");
+//const box = document.getElementById("passzichtbaar");
 
-box = console.log("nu dan??");
+//box = console.log("nu dan??");
 
 
 box.addEventListener("change", e => {
