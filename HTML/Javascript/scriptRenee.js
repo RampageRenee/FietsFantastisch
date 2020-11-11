@@ -8,10 +8,11 @@ function Klant(naam, voornaam, klantnummer, adres,) {
 
 }
 
-function Medewerker(naam, nummer, functie) {
+function Medewerker(naam, nummer, functie, afbeelding) {
     this.naam = naam;
     this.nummer = nummer;
     this.functie = functie;
+    this.afbeelding = afbeelding;
 }
 
 
@@ -24,11 +25,11 @@ var klanten = [
 ]
 
 var medewerkers = [
-    new Medewerker("Ikora", 236, "Directeur"),
-    new Medewerker("Cayde-6", 006, "Monteur"),
-    new Medewerker("Zavala", 237, "Balie"),
-    new Medewerker("Lord Shaxx", 332, "Monteur"),
-    new Medewerker("Xur", 159, "Balie")
+    new Medewerker("Ikora", 236, "Directeur","HTML\images\MED Ikora Rey.jpg"),
+    new Medewerker("Cayde-6", 006, "Monteur", "HTML\images\MED Cayde-6, _.jpg"),
+    new Medewerker("Zavala", 237, "Balie", "HTML\images\MED Zavala.jpg"),
+    new Medewerker("Lord Shaxx", 332, "Monteur", "HTML\images\MED Lord Shaxx.jpg"),
+    new Medewerker("Xur", 159, "Balie", "HTML\images\MED Where Is Xur.jpg")
 ]
 
 
@@ -113,11 +114,28 @@ var deNaam = document.getElementById('med-naam-input').value;
 var hetNummer = document.getElementById('med-nummer-input').value;
 var deFunctie = document.getElementById('med-functie-input').value;
 
+
+
 function voegtoe() {
     let naam = deNaam;
     let num = hetNummer;
     let func = deFunctie;
-    medewerkers.push(new Medewerker(naam,num,func));
+
+    for (var i = 0; i < medewerkers.length; ++i) {
+        let n = medewerkers[i].naam;
+        let m = medewerkers[i].nummer;
+        let f = medewerkers[i].functie;
+    
+
+    if (naam,num, func == n,m,f){
+        document.window.alert("medewerker bestaat al, probeer het nogmaals.");
+
+    }
+    else{
+        medewerkers.push(new Medewerker(naam, num, func));
+        document.window.alert("Medewerker:" + naam  +  " nummer:" + num + "functie:"+ func + " is toegevoegd." );
+    }
+    }
 }
 
 var medVerzend = document.getElementById('med-verzendknop');
