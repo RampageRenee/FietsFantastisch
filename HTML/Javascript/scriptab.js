@@ -1,3 +1,4 @@
+// script voor fietsen pagina gemaakt door ab
 // constructor voor fietsen
 function Fietsen(merk,type,soort,hoogte,aantal,image){
     this.merk = merk;
@@ -10,7 +11,7 @@ function Fietsen(merk,type,soort,hoogte,aantal,image){
 
 
 // array met de Fiets objects
-var soortenFietsen = [
+const soortenFietsen = [
     new Fietsen("Van Moof", "X01", "Heren fiets",  62, 12, "images/herenfiets.jpg"),
     new Fietsen("Koga", "HJC3", "Dames fiets", 51, 6,  "images/damesfiets.jpg"),
     new Fietsen("Speedstep", "Model X", "Elektrische Fiets", 62, 8,  "images/Elektrischefiets.jpg"),
@@ -32,9 +33,7 @@ function hetDropDownMenu(){
         if(i==y){
             document.getElementById("fietsMerk").innerHTML = soortenFietsen[i].merk;
             document.getElementById("fietsType").innerHTML = soortenFietsen[i].type;
-
             voegFotoToe(i);
-            
             gevonden = true;
         }
         i++;
