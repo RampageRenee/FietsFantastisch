@@ -34,11 +34,13 @@ var medewerkers = [
 
 /*--------------------------------------------------MEDEWERKERS-----------------------------------------------------------*/
 const drop = document.getElementById('knop-medewerker');
+const keuzeBalk = document.getElementById("medewerkerDropDown");
 
-//const test = document.getElementById('mederwerker');
-//test.innerHTML = medewerkers[3].naam;
 
-//-----------------------------verander[0] in let uit click value event--------------heel onderstaand dan ook in plaatsen (local)
+
+
+
+//-----------------GEGEVENS VAN MEDEWERKER------------verander[0] in let uit click value event--------------heel onderstaand dan ook in plaatsen (local)
 var pony = medewerkers[0].naam;
 var paard = medewerkers[0].nummer;
 var eekhoorn = medewerkers[0].functie;
@@ -48,8 +50,13 @@ document.getElementById('medewerker-functie').innerHTML = eekhoorn;
 
 var medSleutel = medewerkers.keys();
 
-const keuzeBalk = document.getElementById("medewerkerDropDown");
 
+
+
+
+
+
+//-----------------dropdown loop met toekomst op dynamiek
 for (var i = 0; i < medewerkers.length; ++i) {
     let a = medewerkers[i].naam;
     let b = medewerkers[i];
@@ -98,6 +105,10 @@ keuzeBalk.addEventListener('change', function () {
 
 
 
+
+
+//------------------------Maak een nieuwe medewerker aan--------------------------
+
 var deNaam = document.getElementById('med-naam-input').value;
 var hetNummer = document.getElementById('med-nummer-input').value;
 var deFunctie = document.getElementById('med-functie-input').value;
@@ -111,6 +122,15 @@ function voegtoe() {
 
 var medVerzend = document.getElementById('med-verzendknop');
 medVerzend.addEventListener('onclick', voegtoe);
+
+
+
+
+
+
+
+
+
 
 
 
