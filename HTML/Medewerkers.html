@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./Javascript/scriptRenee.js" async></script>
+    <script src="./Javascript/scriptRenee.js" defer></script>
     <title>Biker - Medewerkers</title>
 </head>
 
@@ -87,10 +87,11 @@
                 <input type="text" placeholder="Bestuurder" id="med-functie-input">
             </div>
             <div class="medewerker-inputbalk">
-                <input id="med-verzendknop" type="submit" value="Verzend">
+                <input id="med-verzendknop" type="button" value="Verzend">
             </div>
             <div>
-                <button onclick="voegtoe(); return false;">Verzend NU!!</button>
+                <input type="button" value="hallo">
+                <button onclick="voegtoe();">Verzend NU!!</button>
             </div>
 
 

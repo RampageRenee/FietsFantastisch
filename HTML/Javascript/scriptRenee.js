@@ -1,5 +1,6 @@
 
 
+
 function Klant(naam, voornaam, klantnummer, adres,) {
     this.naam = naam;
     this.voornaam = voornaam;
@@ -49,58 +50,65 @@ document.getElementById('medewerker-naam').innerHTML = pony;
 document.getElementById('medewerker-nummer').innerHTML = paard;
 document.getElementById('medewerker-functie').innerHTML = eekhoorn;
 
-var medSleutel = medewerkers.keys();
+
+// lijstSelectie(2);
 
 
 
+function lijstSelectie(z){
+    var pony = medewerkers[z].naam;
+    var paard = medewerkers[z].nummer;
+    var eekhoorn = medewerkers[z].functie;
+    document.getElementById('medewerker-naam').innerHTML = pony;
+    document.getElementById('medewerker-nummer').innerHTML = paard;
+    document.getElementById('medewerker-functie').innerHTML = eekhoorn;
+    
+}
 
 
 
 
 //-----------------dropdown loop met toekomst op dynamiek
 for (var i = 0; i < medewerkers.length; ++i) {
-    let a = medewerkers[i].naam;
+    /*let a = medewerkers[i].naam;
     let b = medewerkers[i];
     keuzeBalk[keuzeBalk.length] = new Option(a, b);
     console.log(a);
     console.log(b);
-    var z= a;
-    
-    function Jeezus (){
+    var z= a;*/
+
+    var newpickelement = document.createElement("option");
+    var newpicktext = document.createTextNode(medewerkers[i].naam);
+    newpickelement.appendChild(newpicktext);
+    newpickelement.setAttribute("value", i);
+
+    document.getElementById("medewerkerDropDown").appendChild(newpickelement);
+
+    console.log(newpickelement);
+
+    /*function Jeezus (){
     addEventListener('select' ,function(){
         var pakLijstNummer = z;
         return pakLijstNummer;
     })
-    }
+    }*/
 
 }
 
 
-///eventlistner click , that  i  innerhtml id naam, id nummer , id functie
-console.log(Option);
-
-// function geefMedLijst(lijstVanSleutels){
-//     let waardeSelectie = lijstVanSleutels;
-//     if(empty(waardeSelectie)){
-//         document.getElementById('medewerkerDropDown').value;
-//     }
-//     pony;
-//     paard;
-//     eekhoorn;
-// }
-
-
 
 keuzeBalk.addEventListener('change', function () {
-    let testties = z;
-    console.log(testties);
-
     
-    //return geefMedLijst();
-    //for (let [key, value] of Object.entries(testties)) {  console.log(key,value) };
 
-    //let probeer = [testties].naam;
-    //console.log(probeer);
+
+    var e = document.getElementById("medewerkerDropDown");
+    var result = e.options[e.selectedIndex].value;
+
+    console.log(result);
+
+    lijstSelectie(result);
+    
+    
 
 })
 
@@ -116,10 +124,12 @@ var deFunctie = document.getElementById('med-functie-input').value;
 
 
 
-function voegtoe() {
-    let naam = deNaam;
-    let num = hetNummer;
-    let func = deFunctie;
+function voegtoe(e) {
+    e.preventDefault();
+    
+    console.log("Voegtoe functie uitgevoerd");
+
+    var bestaatAl = false;
 
     for (var i = 0; i < medewerkers.length; ++i) {
         let n = medewerkers[i].naam;
@@ -127,101 +137,37 @@ function voegtoe() {
         let f = medewerkers[i].functie;
     
 
-    if (naam,num, func == n,m,f){
-        document.window.alert("medewerker bestaat al, probeer het nogmaals.");
-
-    }
-    else{
-        medewerkers.push(new Medewerker(naam, num, func));
-        document.window.alert("Medewerker:" + naam  +  " nummer:" + num + "functie:"+ func + " is toegevoegd." );
-    }
-    }
-}
-
-var medVerzend = document.getElementById('med-verzendknop');
-medVerzend.addEventListener('onclick', voegtoe);
-
-
-
-
-
-
-
-
-
-
-
-
-/*----------------------------------------Contact----------------------------------------------------------*/
-
-var bMapSleutel = "Ao4NiMukSnNPQLargdtRVYiiHxyulxPzCGCxSF7CJWNO7BkFipffBSgPFvwbp68C";
-var map;
-function GetMap() {
-
-    var bikerHfd = new Microsoft.Maps.Location(25.689866, 32.637105)
-
-    map = new Microsoft.Maps.Map('#myMap', {
-        //credentials: 'Your Bing Maps Key',
-        center: bikerHfd,
-        mapTypeId: Microsoft.Maps.MapTypeId.canvasLight,
-        zoom: 12
-    });
-
-    //Create an infobox at the center of the map but don't show it.
-    var infobox = new Microsoft.Maps.Infobox(map.getCenter(), {
-        visible: false
-    });
-
-    //Assign the infobox to a map instance.
-    infobox.setMap(map);
-
-
-    var pin = new Microsoft.Maps.Pushpin(bikerHfd, {
-        title: 'Biker Hoofd Locatie',
-        subTitle: 'City Center',
-
-    });
-    pin.metadata = {
-        title: 'Biker Hoofd Locatie',
-        description: 'El Sina Street 22, 85951 Luxor'
-    };
-
-    //Add a click event handler to the pushpin.
-    Microsoft.Maps.Events.addHandler(pin, 'click', pushpinClicked);
-    //Add the pushpin to the map
-    map.entities.push(pin);
-
-    function pushpinClicked(e) {
-        //Make sure the infobox has metadata to display.
-        if (e.target.metadata) {
-            //Set the infobox options with the metadata of the pushpin.
-            infobox.setOptions({
-                location: e.target.getLocation(),
-                title: e.target.metadata.title,
-                description: e.target.metadata.description,
-                visible: true
-            });
+        //if (deNaam,hetNummer, deFunctie == n,m,f){
+        if(deNaam==n && hetNummer==m && deFunctie==f){
+           bestaatAl=true;
+           break;
+        }
+        else{
+            
         }
     }
+
+    if (bestaatAl == true) {
+        window.alert("medewerker bestaat al, probeer het nogmaals.");
+    }
+    else {
+        medewerkers.push(new Medewerker(deNaam, hetNummer, deFunctie));
+        window.alert("Medewerker:" + deNaam + " nummer:" + hetNummer + "functie:" + deFunctie + " is toegevoegd.");
+    }
 }
 
 
 
-
-/*--------------------------------------------------LOG IN -----------------------------------------------------------*/
-
-//const box = document.getElementById("passzichtbaar");
-
-//box = console.log("nu dan??");
+document.getElementById("med-verzendknop").onclick = voegtoe;
 
 
-box.addEventListener("change", e => {
-    let veld = document.getElementById("veld2");
 
-    veld.type = e.target.checked ? "text" : "password"
 
-    //if (e.target.checked){
-    //  veld.type = "text"
 
-    //}
-})
+
+
+
+
+
+
+
