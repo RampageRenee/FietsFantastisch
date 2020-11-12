@@ -1,4 +1,5 @@
 
+/*--------------------------------------------------MEDEWERKERS----------MADE BY RENEE-------------------------------------------------*/
 
 
 function Klant(naam, voornaam, klantnummer, adres,) {
@@ -137,7 +138,7 @@ function voegtoe(e) {
         let f = medewerkers[i].functie;
     
 
-        //if (deNaam,hetNummer, deFunctie == n,m,f){
+        
         if(deNaam==n && hetNummer==m && deFunctie==f){
            bestaatAl=true;
            break;
