@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css"> <!--onze font worden in de stylesheet gelinkd-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--onze inconen onder aan de pagina worden hierdoor getoond-->
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./Javascript/scriptab.js" async></script>
+    <script src="./Javascript/fietsen.js" defer></script>
     <title>Kies uw fiets</title>
 </head>
 <body>
@@ -35,6 +35,7 @@
     
     <main>
         <section class="selectc">
+            <h2>Selecteer hier je fiets</h2>
             <select id="dropDownMenu" onchange="hetDropDownMenu()">
                 <option value="0">Heren fiets</option>
                 <option value="1">Dames fiets</option>
@@ -60,9 +61,19 @@
                 </div>
             </article>
             <article class="grid-item">
-                <h3>Foto:</h3>
+                <h2>Foto:</h2>
                 <div id="fietsFoto"></div>
             </article>
+        </section>
+
+        <section style="text-align: center;">
+            <form action="./accessoires.html">
+                <h2>Voeg hier een zelfgemaakte fiets toe</h2>
+                <input type="text" class="soortFiets" placeholder="Soort Fiets"><br>
+                <input type="text" class="merkToevoegingen" placeholder="Merk Fiets"><br>
+                <input type="text" class="typeToevoegingen" placeholder="Type Fiets"><br>
+                <input type="submit" class="verstuurGegevens">
+            </form>
         </section>
 
 
