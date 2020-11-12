@@ -332,7 +332,7 @@ input {
 
 
 
-.c {
+.selectc {
     text-align: center;
 }
 
@@ -574,12 +574,17 @@ footer, img {
 
 @media screen and (max-width: 992px) {
     .grid-container {
-        font-size: 15px;
+        font-size: 13px;
     }
     
 }
 
 
+@media screen and (max-width: 992px) {
+    .grid-item {
+        font-size: 13px;
+    }
+}
 
 
 
