@@ -49,6 +49,14 @@ function voegFotoToe(y){
     src.appendChild(img);
 }
 
+const voegObjectToe = () => {
+
+}
+//.push 
+
+
+
+
 
 // for loop gebruiken om in de dropdown menu het merk van de objecten uit de array
 // weer te geven van het soort fiets
