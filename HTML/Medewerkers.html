@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--om de website passend (responsive) voor kleine schermen-->
     <meta name="description" content="Welkom op de verhuurpagina van biker haaglanden">
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css">
@@ -40,18 +40,21 @@
 
     <!-------------------------------------------------MAIN ---------------------------------------------------->
     <main class="Medewerkers-hoofd">
-        <h1 class="medewerker-titel">Vijf Medewerkers</h1>
+            <section class="medewerker-titel"><h1 >Vijf Medewerkers</h1>
 
-        <p>De opdracht: • Een HTML pagina laat het eerste element uit de betreffende array zien Dus de Klant pagina laat het 
-            eerste element uit
-        de array Klant zien etc.</p>
-        <section class = "medewerker-sub">
+            <p>De opdracht: • Een HTML pagina laat het eerste element uit de betreffende array zien Dus de Klant pagina laat het 
+            eerste element uit de array Klant zien etc.</p>
+            </section>
+    
             <section class = "block-medewerker1" id="keuze">
             <label  for="medewerkerDropDown">Kies een Medewerker: </label>
             <select class="inlog-label" id="medewerkerDropDown" ><option>--Selecteer een medewerker--</option>
-               
             </select>
             <p>Werkt Maar er gebeurd nog niks als je een medewerker selecteert.</p>
+            </section>
+
+            <section class="block-plaatjeMedewerker">
+                <img  id="afbeeldingMedewerker" src="" alt="afbeelding van de desbetreffende medewerker">
             </section>
 
             <section  class = "block-medewerker2">
@@ -66,7 +69,6 @@
             <div id="medewerker-functie">
                 <p>Functie</p>
             </div>
-
             </output>
             </section>
 
@@ -89,13 +91,9 @@
             <div class="medewerker-inputbalk">
                 <input id="med-verzendknop" type="button" value="Verzend">
             </div>
-       
-
-
             </form>
-           
             </section>
-        </section>
+        
         
        
 
