@@ -355,38 +355,45 @@ input {
 /*------------------------------ Medewerkers-----------------RENEE----------------------------------*/
 
 .Medewerkers-hoofd{
-    max-width: 50em;
+    max-width: 50em; 
     margin:0 auto ;
-   
+
     
 
 }
 .medewerker-titel{
     text-align: center;
+
+   /*  grid-column: 1/5; */
 }
 
 
 .block-medewerker1{
    padding: 12px;
     border:solid 10px #46ad65;
+
+   /*  grid-column: 1/5;
+    text-align: center; */
 }
 
 .block-plaatjeMedewerker{
   padding: 12px;
     border:solid 10px #46ad65;
+
+    /* grid-column:1/3 ; */
 }
 
 .block-medewerker2{
    padding: 12px;
     border:solid 10px #46ad65;
     
-
+    /* grid-column: 3/5; */
 }
 .block-medewerker3{
    padding: 12px;
     border:solid 10px #46ad65;
     
-    
+   /*  grid-column: 2/4; */
 
 }
 .medewerker-inputbalk{
