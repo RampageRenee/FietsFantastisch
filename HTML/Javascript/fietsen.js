@@ -11,7 +11,7 @@ function Fietsen(merk,type,soort,hoogte,aantal,image){
 
 
 // array met de Fiets objects
-const soortenFietsen = [
+const SOORTENFIETSEN = [
     new Fietsen("Van Moof", "X01", "Heren fiets",  62, 12, "images/herenfiets.jpg"),
     new Fietsen("Koga", "HJC3", "Dames fiets", 51, 6,  "images/damesfiets.jpg"),
     new Fietsen("Speedstep", "Model X", "Elektrische Fiets", 62, 8,  "images/Elektrischefiets.jpg"),
@@ -20,8 +20,8 @@ const soortenFietsen = [
 ]; 
 
 // Om een default te kunnen weergegeven, het eerste object uit de array
-document.getElementById("fietsMerk").innerHTML = soortenFietsen[0].merk;
-document.getElementById("fietsType").innerHTML = soortenFietsen[0].type;
+document.getElementById("fietsMerk").innerHTML = SOORTENFIETSEN[0].merk;
+document.getElementById("fietsType").innerHTML = SOORTENFIETSEN[0].type;
 voegFotoToe(0); 
 
 //functie voor het weergeven van de objecten uit de geschreven array 
@@ -31,8 +31,8 @@ function hetDropDownMenu(){
     let i = 0;
     while (!gevonden){
         if(i==y){
-            document.getElementById("fietsMerk").innerHTML = soortenFietsen[i].merk;
-            document.getElementById("fietsType").innerHTML = soortenFietsen[i].type;
+            document.getElementById("fietsMerk").innerHTML = SOORTENFIETSEN[i].merk;
+            document.getElementById("fietsType").innerHTML = SOORTENFIETSEN[i].type;
             voegFotoToe(i);
             gevonden = true;
         }
@@ -44,14 +44,14 @@ function hetDropDownMenu(){
 function voegFotoToe(y){
     document.getElementById("fietsFoto").innerHTML="";
     var img = document.createElement("img");
-    img.src = soortenFietsen[y].image;
+    img.src = SOORTENFIETSEN[y].image;
     var src = document.getElementById("fietsFoto");
     src.appendChild(img);
 }
 
-const voegObjectToe = () => {
+// const voegObjectToe = () => {
 
-}
+// }
 //.push 
 
 
