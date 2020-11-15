@@ -29,12 +29,12 @@ const keuzeBalk = document.getElementById("medewerkerDropDown");
 
 
 //-----------------GEGEVENS VAN MEDEWERKER------------verander[0] in let uit click value event--------------heel onderstaand dan ook in plaatsen (local)
-var pony = medewerkers[0].naam;
+/* var pony = medewerkers[0].naam;
 var paard = medewerkers[0].nummer;
 var eekhoorn = medewerkers[0].functie;
 document.getElementById('medewerker-naam').innerHTML = pony;
 document.getElementById('medewerker-nummer').innerHTML = paard;
-document.getElementById('medewerker-functie').innerHTML = eekhoorn;
+document.getElementById('medewerker-functie').innerHTML = eekhoorn; */
 
 
 // lijstSelectie(2);
@@ -42,13 +42,13 @@ document.getElementById('medewerker-functie').innerHTML = eekhoorn;
 
 
 function lijstSelectie(z){
-    var pony = medewerkers[z].naam;
-    var paard = medewerkers[z].nummer;
-    var eekhoorn = medewerkers[z].functie;
+    var naampony = medewerkers[z].naam;
+    var nummerpaard = medewerkers[z].nummer;
+    var functieeekhoorn = medewerkers[z].functie;
     
-    document.getElementById('medewerker-naam').innerHTML = pony;
-    document.getElementById('medewerker-nummer').innerHTML = paard;
-    document.getElementById('medewerker-functie').innerHTML = eekhoorn;
+    document.getElementById('medewerker-naam').innerHTML = naampony;
+    document.getElementById('medewerker-nummer').innerHTML = nummerpaard;
+    document.getElementById('medewerker-functie').innerHTML = functieeekhoorn;
     
 }
 
@@ -115,9 +115,7 @@ function voegtoe(e) {
            bestaatAl=true;
            break;
         }
-        else{
-            
-        }
+        
     }
 
     if (bestaatAl == true) {
