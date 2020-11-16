@@ -1,6 +1,6 @@
 
 /*--------------------------------------------------LOG IN --------MADE BY RENEE---------------------------------------------------*/
-
+const drop = document.getElementById('knop-medewerker');
 //const box = document.getElementById("passzichtbaar");
 
 //box = console.log("nu dan??");

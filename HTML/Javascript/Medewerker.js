@@ -13,15 +13,15 @@ function Medewerker(naam, nummer, functie, afbeelding) {
 
 var medewerkers = [
     new Medewerker("Ikora", 236, "Directeur","./images/MED Ikora Rey.jpg"),
-    new Medewerker("Cayde-6", 006, "Monteur", "./images/MEDCayde-6.jpg"),
+    new Medewerker("Cayde-6", 106, "Monteur", "./images/MEDCayde-6.jpg"),
     new Medewerker("Zavala", 237, "Balie", "./images/MED Zavala.jpg"),
     new Medewerker("Lord Shaxx", 332, "Monteur", "./images/MED Lord Shaxx.jpg"),
     new Medewerker("Xur", 159, "Balie", "./images/MED Where Is Xur.jpg")
-]
+];
 
 
 /*--------------------------------------------------MEDEWERKERS-----------------------------------------------------------*/
-const drop = document.getElementById('knop-medewerker');
+
 const keuzeBalk = document.getElementById("medewerkerDropDown");
 
 
@@ -86,7 +86,7 @@ keuzeBalk.addEventListener('change', function () {
     lijstSelectie(result);
     fotoSelectie(result);
     
-})
+});
 
 
 
