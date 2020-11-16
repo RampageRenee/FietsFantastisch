@@ -512,6 +512,16 @@ input[type=password]:focus{
 
 }
 
+
+.maingridlayout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 1em;
+}
+
+
 /* FOOTER --------------------------------------------------- */
 
 footer .footer {
