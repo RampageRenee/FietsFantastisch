@@ -27,17 +27,9 @@ voegFotoToe(0);
 //functie voor het weergeven van de objecten uit de geschreven array 
 function hetDropDownMenu(){
     var y = document.getElementById("dropDownMenu").value; 
-    let gevonden = false;
-    let i = 0;
-    while (!gevonden){
-        if(i==y){
-            document.getElementById("fietsMerk").innerHTML = SOORTENFIETSEN[i].merk;
-            document.getElementById("fietsType").innerHTML = SOORTENFIETSEN[i].type;
-            voegFotoToe(i);
-            gevonden = true;
-        }
-        i++;
-    }
+            document.getElementById("fietsMerk").innerHTML = SOORTENFIETSEN[y].merk;
+            document.getElementById("fietsType").innerHTML = SOORTENFIETSEN[y].type;
+            voegFotoToe(y);
 }
 
 // functie voor het toevoegen van de images
@@ -49,8 +41,30 @@ function voegFotoToe(y){
     src.appendChild(img);
 }
 
-// const voegObjectToe = () => {
+// 1 functie per functionaliteit 
 
+
+const formElem = document.getElementById('verzendFormulier');
+
+    formElem.addEventListener('submit', (e) => {
+    e.preventDefault();
+    var data = new FormData(formElem);
+    var fiets = new Fietsen(data.get('merk'),data.get('fiets'),data.get('type')); 
+    SOORTENFIETSEN.push(fiets); 
+  });
+
+
+  function checkWaarden(){
+    alert(SOORTENFIETSEN.includes("Van Moof") + " Deze fiets bestaat al"); 
+  }; 
+  
+  
+
+
+// on form submission, prevent default
+// construct a FormData object, which fires the formdata event
+
+// const voegObjectToe = () => {
 // }
 //.push 
 
