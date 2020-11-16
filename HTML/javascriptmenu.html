@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<!--Gemaakt door Renee Clerx-->
 <html lang="nl" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--om de website passend (responsive) voor kleine schermen-->
     <meta name="description" content="Welkom op de verhuurpagina van biker haaglanden">
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./Javascript/Medewerker.js" defer></script>
-    <title>Biker - Medewerkers</title>
+    <title>Biker - extra service</title>
+    <script src="./Javascript/Klanten.js" defer></script>
 </head>
 
 <body>
@@ -21,9 +20,9 @@
             <nav>
                 <ul>
                     <li><a href="./index.html" target="_blank">Homepagina</a></li>
-                    <li style="float: right;"><a class="active" href="./InlogPagina.html">Log in</a></li>
+                    <li style="float: right;"><a href="./InlogPagina.html">Log in</a></li>
                     <li style="float: right;"><a href="./contact.html">Contact</a></li>
-                    <li style="float: right;"><a  href="./extraservices.html">Extra services</a></li>
+                    <li style="float: right;"><a class="active" href="./extraservices.html">Extra services</a></li>
                     <li style="float: right;"><a href="./fietsreizen.html">Reizen</a></li>
                     <li style="float: right;"><a href="./overons.html">Over ons</a></li>
                     <li style="float: right;"><a href="./verhuurpagina.html">Verhuur</a></li>
@@ -38,78 +37,10 @@
                 alt="logo van biker haaglanden" width="1300" height="400"></a>
     </section>
 
+    <main>
 
-    <!-------------------------------------------------MAIN ---------------------------------------------------->
-    <main >
-        <section class="Medewerkers-hoofd">
-            <section class="medewerker-titel">
-                <h1 >Vijf Medewerkers</h1>
-
-                <p>De opdracht: • Een HTML pagina laat het eerste element uit de betreffende array zien Dus de Klant pagina laat het 
-                eerste element uit de array Klant zien etc.</p>
-            </section>
-    
-            <section class = "block-medewerker1" id="keuze">
-                <label  for="medewerkerDropDown">Kies een Medewerker: </label>
-                    <select class="inlog-label" id="medewerkerDropDown" ><option>--Selecteer een medewerker--</option>
-                    </select>
-                <p></p>
-            </section>
-
-            <section class="block-plaatjeMedewerker">
-                <img  id="afbeeldingMedewerker" src=".\images\MEDEWERKER.jpg" alt="afbeelding van de desbetreffende medewerker"
-                width=100% >
-            </section>
-
-            <section  class = "block-medewerker2">
-                <output>
-                    <h4>Gegevens van Medewerker</h4>
-                <div id = "medewerker-naam">
-                        <p >Naam</p>
-                </div>
-
-                <div id="medewerker-nummer">
-                    <p>Nummer</p>
-                </div>
-
-                <div id="medewerker-functie">
-                    <p>Functie</p>
-                </div>
-                </output>
-            </section>
-
-
-            <section class = "block-medewerker3">
-                <form id="medewerker-formulier">
-
-                    <h4>Maak nieuwe Medewerker aan</h4>
-
-                    <div class="medewerker-inputbalk"> 
-                        <label for="">Naam: </label>
-                        <input type="text" placeholder="Captain Jack Harkness" id="med-naam-input">
-                    </div>
-
-                    <div class="medewerker-inputbalk">
-                        <label for="">Nummer: </label>
-                        <input type="text" placeholder="007" id="med-nummer-input">
-                    </div>
-
-                    <div class="medewerker-inputbalk">
-                        <label for="">Functie: </label>
-                        <input type="text" placeholder="Bestuurder" id="med-functie-input">
-                    </div>
-
-                    <div class="medewerker-inputbalk">
-                        <input id="med-verzendknop" type="button" value="Verzend">
-                    </div>
-
-                </form>
-            </section>
-        </section>
     </main>
-        
 
-    <!------------------------Footer------------------------------------>
     <footer>
         <section class="footer">
             <nav>
@@ -139,7 +70,7 @@
             </nav>
         </section>
         <section class="footer-bottom">
-            &copy; Pagina gemaakt door: Renee
+            &copy; Pagina gemaakt door: ab
         </section>
     </footer>
 </body>
