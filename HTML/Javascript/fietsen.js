@@ -9,7 +9,6 @@ function Fietsen(merk,type,soort,hoogte,aantal,image){
     this.image = image;
 }
 
-
 // array met de Fiets objects
 const SOORTENFIETSEN = [
     new Fietsen("Van Moof", "X01", "Heren fiets",  62, 12, "images/herenfiets.jpg"),
@@ -41,32 +40,45 @@ function voegFotoToe(y){
     src.appendChild(img);
 }
 
-// 1 functie per functionaliteit 
+// Toevoegen van een object via het verzendformulier
+const verzend = document.getElementById('verzendFormulier')
+verzend.addEventListener('submit', (e) => {
+    e.preventDefault(); // Om ervoor te zorgen dat de pagina niet omhoog springt 
+    var data = new FormData(verzend);
+    var fiets = new Fietsen(data.get('merk'),data.get('fiets'),data.get('type'));
+    SOORTENFIETSEN.push(fiets);
+});   
 
+// Ervoor zorgen dat het bovenstaande nog controleerd wordt of een array bestaat of niet
+// Stap 2 nog een topbanner toevoegen > laatste en dan staat de pagina 
 
-const formElem = document.getElementById('verzendFormulier');
-
-    formElem.addEventListener('submit', (e) => {
-    e.preventDefault();
-    var data = new FormData(formElem);
-    var fiets = new Fietsen(data.get('merk'),data.get('fiets'),data.get('type')); 
-    SOORTENFIETSEN.push(fiets); 
-  });
-
-
-  function checkWaarden(){
-    alert(SOORTENFIETSEN.includes("Van Moof") + " Deze fiets bestaat al"); 
-  }; 
-  
-  
 
 
 // on form submission, prevent default
 // construct a FormData object, which fires the formdata event
 
-// const voegObjectToe = () => {
-// }
-//.push 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -103,4 +115,3 @@ const formElem = document.getElementById('verzendFormulier');
 // }
 
 // Dynamische Javascript hierboven maar moet nog verder uitgewerkt worden
-// Hieronder de hardcoded Javascript
