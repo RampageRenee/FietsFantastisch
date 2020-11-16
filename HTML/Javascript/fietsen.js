@@ -40,15 +40,27 @@ function voegFotoToe(y){
     src.appendChild(img);
 }
 
+
 // Toevoegen van een object via het verzendformulier
 const verzend = document.getElementById('verzendFormulier')
-verzend.addEventListener('submit', (e) => {
+verzend.addEventListener('submit', function(e) {
     e.preventDefault(); // Om ervoor te zorgen dat de pagina niet omhoog springt 
     var data = new FormData(verzend);
     var fiets = new Fietsen(data.get('merk'),data.get('fiets'),data.get('type'));
-    SOORTENFIETSEN.push(fiets);
+    checkFiets(fiets);
 });   
 
+
+//Voor het controleren of er al een object in soorten fietsen bestaat
+function checkFiets(fiets) {
+    const gevonden = SOORTENFIETSEN.some(fietsInhoud => fietsInhoud.merk === fiets.merk)
+    if(!gevonden) {
+        SOORTENFIETSEN.push(fiets);
+    } else {
+        alert(fiets.merk + " bestaat al.");
+    }
+}
+   
 // Ervoor zorgen dat het bovenstaande nog controleerd wordt of een array bestaat of niet
 // Stap 2 nog een topbanner toevoegen > laatste en dan staat de pagina 
 
