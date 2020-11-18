@@ -59,7 +59,7 @@ function fotoSelectie(z){
 
 
 
-//-----------------dropdown loop met toekomst op dynamiek
+//-----------------dropdown loop met toekomst op dynamiek---functie van maken
 for (var i = 0; i < medewerkers.length; ++i) {
    
 
@@ -97,9 +97,11 @@ keuzeBalk.addEventListener('change', function () {
 
 
 
-function voegtoe(e) {
-    e.preventDefault();
-    
+function voegtoe() {
+   // e.preventDefault();
+    let deNaam = document.getElementById('med-naam-input').value;
+    let hetNummer = document.getElementById('med-nummer-input').value;
+    let deFunctie = document.getElementById('med-functie-input').value;
     console.log("Voegtoe functie uitgevoerd");
 
     var bestaatAl = false;
@@ -122,12 +124,24 @@ function voegtoe(e) {
         window.alert("medewerker bestaat al, probeer het nogmaals.");
     }
     else {
+        //document.getElementById('block-medewerkers3').reload();
         medewerkers.push(new Medewerker(deNaam, hetNummer, deFunctie));
         window.alert("Medewerker: " + deNaam + ", nummer: " + hetNummer + ", functie: " + deFunctie + " is toegevoegd.");
+        
     }
 }
 
 
+function resetBTN(){
+
+}
+
+
+
+function achtergrond(){
+    document.getElementById('medTitel').style.backgroundImage = "url('./images/mede.jpg')";
+    document.getElementById('medTitel').style.backgroundSize = "cover";
+}
 
 var deNaam = document.getElementById('med-naam-input').value;
 var hetNummer = document.getElementById('med-nummer-input').value;
@@ -135,8 +149,8 @@ var deFunctie = document.getElementById('med-functie-input').value;
 
 
 document.getElementById("med-verzendknop").onclick = voegtoe;
-
-
+document.getElementById('med-resetknop').onclick = resetBTN;
+document.getElementById('medTitel').onmouseenter = achtergrond;
 
 
 

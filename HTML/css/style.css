@@ -363,8 +363,9 @@ input {
 }
 .medewerker-titel{
     text-align: center;
-
-   /*  grid-column: 1/5; */
+    background-image: url(images/MEDEWERKER.jpg) ;
+    background-size: contain;
+   
 }
 
 
@@ -576,8 +577,16 @@ footer, img {
 
 
 
-/*-----------------------------------Responsive------------------------------------------------------------ */
+/*-----------------------------------Responsive---------------renee--------------------------------------------- */
 @supports (grid-area:auto){
+
+    @media screen and (max-width: 50em) {
+        li a, footer .footermenu{
+            font-size: 12px;
+            font-weight: 550;
+        }
+        
+    }
 
     @media screen and (min-width:50em) {
 
@@ -640,8 +649,8 @@ footer, img {
         }
 
     }
-
-
+   /*-----------------------------------Responsive-----------Ab------------------------------------------------- */
+            
     @media screen and (max-width: 992px) {
         .grid-container {
             font-size: 13px;
