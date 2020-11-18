@@ -133,6 +133,11 @@ function voegtoe() {
 
 
 function resetBTN(){
+    
+document.getElementById('med-naam-input').value="";
+document.getElementById('med-nummer-input').value = "";
+document.getElementById('med-functie-input').value= "";
+
 
 }
 
