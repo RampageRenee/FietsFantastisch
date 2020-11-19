@@ -44,7 +44,7 @@ function voegFotoToe(y){
 // Toevoegen van een object via het verzendformulier
 const verzend = document.getElementById('verzendFormulier')
 verzend.addEventListener('submit', function(event) {
-    event.preventDefault(); // Om ervoor te zorgen dat de pagina niet omhoog springt 
+    event.preventDefault();
     var data = new FormData(verzend);
     var fiets = new Fietsen(data.get('merk'),data.get('soort'),data.get('type'),data.get('hoogte'),data.get('aantal'));
     checkFiets(fiets);
@@ -62,14 +62,6 @@ function checkFiets(fiets) {
         alert("De fiets: " + fiets.merk + " bestaat al.");
     }
 }
-   
-// Ervoor zorgen dat het bovenstaande nog controleerd wordt of een array bestaat of niet
-// Stap 2 nog een topbanner toevoegen > laatste en dan staat de pagina 
-
-
-
-// on form submission, prevent default
-// construct a FormData object, which fires the formdata event
 
 
 
