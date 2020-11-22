@@ -48,7 +48,7 @@ function checkaccesoires(accesoires) {
     const gevonden = soortenaccesoires.some(accesoiresInhoud => accesoiresInhoud.merk === accesoires.merk)
     if(!gevonden) {
         soortenaccesoires.push(accesoires);
-        alert("De accesoire: " + accesoire.merk + " is toegevoegd"); 
+        alert("De accesoire: " + accesoires.merk + " is toegevoegd"); 
         console.log(accesoires);
     } else {
         alert("De accesoire: " + accesoires.merk + " bestaat al.");
