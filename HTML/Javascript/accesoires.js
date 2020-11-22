@@ -21,6 +21,14 @@ document.getElementById("accesoiresMerk").innerHTML = soortenaccesoires[0].merk;
 document.getElementById("accesoiresSoort").innerHTML = soortenaccesoires[0].soort;
 voegFotoToe(0); 
 
+function voegFotoToe(y){
+    document.getElementById("accessoiresFoto").innerHTML="";
+    var img = document.createElement("img");
+    img.src = soortenaccesoires[y].image;
+    var src = document.getElementById("accessoiresFoto");
+    src.appendChild(img);
+}
+
 function hetDropDownMenu(){
     var y = document.getElementById("dropDownMenu").value; 
             document.getElementById("accesoiresMerk").innerHTML = soortenaccesoires[y].merk;
@@ -28,12 +36,24 @@ function hetDropDownMenu(){
             voegFotoToe(y);
 }
 
-function voegFotoToe(y){
-    document.getElementById("accessoiresFoto").innerHTML="";
-    var img = document.createElement("img");
-    img.src = soortenaccesoires[y].image;
-    var src = document.getElementById("accessoiresFoto");
-    src.appendChild(img);
+const verzend = document.getElementById('verzendFormulier')
+verzend.addEventListener('submit', function(event) {
+    event.preventDefault();
+    var data = new FormData(verzend);
+    var accesoires = new accesoiren(data.get('merk'),data.get('soort'),data.get('type'),);
+    checkaccesoires(accesoires);
+});   
+
+
+function checkaccesoires(accesoires) {
+    const gevonden = SOORTENFIETSEN.some(fietsInhoud => fietsInhoud.merk === fiets.merk)
+    if(!gevonden) {
+        soortenaccesoires.push(accesoires);
+        alert("accesoiren: " + accesoires.merk + "toegevoegd"); 
+        console.log(fiets);
+    } else {
+        alert("accesoiren: " + accesoires.merk + " bestaat al.");
+    }
 }
 
 // script accesoires gemaakt door tarik
