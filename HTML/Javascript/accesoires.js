@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // script door tarik
 
 function accesoires(merk,soort,type,image){
@@ -35,6 +35,5 @@ function voegFotoToe(y){
     var src = document.getElementById("accessoiresFoto");
     src.appendChild(img);
 }
-=======
+
 // script accesoires gemaakt door tarik
->>>>>>> 631480f8e896f2e04f935db1a572e29a25f08506
