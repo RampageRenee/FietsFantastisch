@@ -349,6 +349,39 @@ input {
 
 /*---------------------------- Klanten---------------------FILI------------------------------*/
 
+.klant-hoofd{
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+.klant-top{
+    text-align: center;
+}
+
+.klant-keuze{
+     padding: 12px;
+    border:solid 10px  #c46952;
+    
+
+}
+.klant-gegevens{
+     padding: 12px;
+    border:solid 10px  #c46952;
+    
+
+}
+.klant-nieuw{
+     padding: 12px;
+    border:solid 10px #c46952;
+    
+
+}
+.klant-foto{
+     padding: 12px;
+    border:solid 10px  #c46952;
+
+}
+
 
 
 

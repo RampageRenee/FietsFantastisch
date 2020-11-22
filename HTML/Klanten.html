@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Biker - extra service</title>
-    <script src="./Javascript/Klanten.js" defer></script>
+    <script src="script.js" async></script>
+    <title>Biker - Medewerkers</title>
 </head>
 
 <body>
@@ -21,13 +21,12 @@
             <nav>
                 <ul>
                     <li><a href="./index.html" target="_blank">Homepagina</a></li>
-                    <li style="float: right;"><a href="./InlogPagina.html">Log in</a></li>
+                    <li style="float: right;"><a class="active" href="./InlogPagina.html">Log in</a></li>
                     <li style="float: right;"><a href="./contact.html">Contact</a></li>
-                    <li style="float: right;"><a class="active" href="./extraservices.html">Extra services</a></li>
+                    <li style="float: right;"><a href="./extraservices.html">Extra services</a></li>
                     <li style="float: right;"><a href="./fietsreizen.html">Reizen</a></li>
                     <li style="float: right;"><a href="./overons.html">Over ons</a></li>
                     <li style="float: right;"><a href="./verhuurpagina.html">Verhuur</a></li>
-                    <li style="float: right;"><a href="./javascriptmenu.html">JavaScript</a></li>
                 </ul>
             </nav>
         </section>
@@ -41,16 +40,63 @@
 
     <!-------------------------------------------------MAIN ---------------------------------------------------->
     <main>
-        <h1 class="titelVijfKlanten">Vijf Klanten</h1>
-    </main>
-    <!-- <form action="./vijfMedewerkers.html">
-        <section class="submitbtnopties">
-            <input class="submit123" type="submit" 
-            value="Klik hier om verder te gaan naar de medewerkes">
-        </section>
-    </form>
-         -->
+        <section class="klant-hoofd">
 
+            <section class="klant-top">
+                <h2>Vijf Klanten</h2>
+                <p>Opdracht uitleg, enzo. misschien ook als reader gebruiken??</p>
+            </section>
+
+            <section class="klant-keuze">
+                <h4>Keuze menu</h4>
+                <label for="klantDropDown">Kies een klant: </label>
+                <select id="klantDropDown">
+                    <option>--selecteer een klant--</option>
+
+                </select>
+            </section>
+
+            <section class="klant-foto">
+                <img id="klFotot" src="" alt="afbeelding van de medewerker" width=100%>
+            </section>
+
+            <section class="klant-gegevens">
+                <h4>Gegevens output van Klanten</h4>
+                <p id="klant-naam">Naam</p>
+                <p id="klant-voornaam">Voornaam</p>
+                <p id="klant-nummer">Klantnummer</p>
+                <p id="klant-adres">Adres</p>
+            </section>
+
+            <section class="klant-nieuw">
+                <form id="klanten-formulier">
+                    <h4>Maak nieuwe Medewerker aan</h4>
+                    <div class="klant-inputbalk">
+                        <label for="">Naam: </label>
+                        <input type="text" placeholder="Harkness" id="klant-naam-input">
+                    </div>
+                    <div class="klant-inputbalk">
+                        <label for="">Voornaam: </label>
+                        <input type="text" placeholder="Captain Jack" id="klant-voornaam-input">
+                    </div>
+                    <div class="klant-inputbalk">
+                        <label for="">Klantnummer: </label>
+                        <input type="text" placeholder="007" id="klant-nummer-input">
+                    </div>
+                    <div class="klant-inputbalk">
+                        <label for="">Adres: </label>
+                        <input type="text" placeholder="Gotham" id="klant-adres-input">
+                    </div>
+                    <div class="klant-inputbalk">
+                        <input id="klant-verzendknop" type="button" value="Verzend">
+                    </div>
+                </form>
+            </section>
+
+        </section>
+
+
+    </main>
     <!------------------------Footer------------------------------------>
     <footer>
         <section class="footer">
