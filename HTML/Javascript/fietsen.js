@@ -1,4 +1,4 @@
-// script voor fietsen pagina gemaakt door ab
+// script fietsen pagina gemaakt door AB
 // constructor voor fietsen
 function Fietsen(merk,type,soort,hoogte,aantal,image){
     this.merk = merk;
@@ -44,7 +44,7 @@ function voegFotoToe(y){
 // Toevoegen van een object via het verzendformulier
 const verzend = document.getElementById('verzendFormulier')
 verzend.addEventListener('submit', function(event) {
-    event.preventDefault(); // Om ervoor te zorgen dat de pagina niet omhoog springt 
+    event.preventDefault();
     var data = new FormData(verzend);
     var fiets = new Fietsen(data.get('merk'),data.get('soort'),data.get('type'),data.get('hoogte'),data.get('aantal'));
     checkFiets(fiets);
@@ -62,14 +62,6 @@ function checkFiets(fiets) {
         alert("De fiets: " + fiets.merk + " bestaat al.");
     }
 }
-   
-// Ervoor zorgen dat het bovenstaande nog controleerd wordt of een array bestaat of niet
-// Stap 2 nog een topbanner toevoegen > laatste en dan staat de pagina 
-
-
-
-// on form submission, prevent default
-// construct a FormData object, which fires the formdata event
 
 
 
@@ -87,45 +79,3 @@ function checkFiets(fiets) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// for loop gebruiken om in de dropdown menu het merk van de objecten uit de array
-// weer te geven van het soort fiets
-
-
-// const select = document.getElementById("select");
-
-// for (var i = 0; i < soortenFietsen.length; i++){
-//     select[select.length] = new Option(soortenFietsen[i].soort);
-// };
-
-
-// console.log(soortenFietsen[1]);
-
-// let resultaat = document.getElementById('')
-
-
-// arrow function om het resultaat weer te gegeven hierin dus zorgen dat er 1 resultaat naar boven komt 
-// += voegt het resultaat toe aan de variable fietsen
-
-
-// function getWaarden(){
-//     var fietsen = "";
-//     soortenFietsen.forEach((element) => {
-//             fietsen += "<span>" + element.merk + "<br>" + element.image + "<br>" + "</span>";
-//         }
-//     );
-//     document.getElementById('showresults').innerHTML = fietsen;
-    
-// }
-
-// Dynamische Javascript hierboven maar moet nog verder uitgewerkt worden
