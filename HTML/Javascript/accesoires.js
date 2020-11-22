@@ -40,19 +40,19 @@ const verzend = document.getElementById('verzendFormulier')
 verzend.addEventListener('submit', function(event) {
     event.preventDefault();
     var data = new FormData(verzend);
-    var accesoires = new accesoiren(data.get('merk'),data.get('soort'),data.get('type'),);
+    var accesoire = new accesoires(data.get('merk'),data.get('soort'),data.get('type'),);
     checkaccesoires(accesoires);
 });   
 
 
-function checkaccesoires(accesoires) {
-    const gevonden = SOORTENFIETSEN.some(fietsInhoud => fietsInhoud.merk === fiets.merk)
+function checkaccesoires(checkaccesoire) {
+    const gevonden = soortenaccesoires.some(accesoiresInhoud => accesoiresInhoud.merk === accesoires.merk)
     if(!gevonden) {
-        soortenaccesoires.push(accesoires);
-        alert("accesoiren: " + accesoires.merk + "toegevoegd"); 
-        console.log(fiets);
+        soortenaccesoires.push(accesoire);
+        alert("De accesoire: " + accesoire.merk + " is toegevoegd"); 
+        console.log(accesoire);
     } else {
-        alert("accesoiren: " + accesoires.merk + " bestaat al.");
+        alert("De accesoire: " + accesoires.merk + " bestaat al.");
     }
 }
 
