@@ -37,13 +37,13 @@ function hetDropDownMenu(){
 }
 
 const verzend = document.getElementById('verzendFormulier')
+
 verzend.addEventListener('submit', function(event) {
     event.preventDefault();
     var data = new FormData(verzend);
     var accesoire = new accesoires(data.get('merk'),data.get('soort'),data.get('type'),);
     checkaccesoires(accesoires);
-});   
-
+    
 
 function checkaccesoires(checkaccesoire) {
     const gevonden = soortenaccesoires.some(accesoiresInhoud => accesoiresInhoud.merk === accesoires.merk)
@@ -55,5 +55,11 @@ function checkaccesoires(checkaccesoire) {
         alert("De accesoire: " + accesoires.merk + " bestaat al.");
     }
 }
+
+
+});   
+
+
+
 
 // script accesoires gemaakt door tarik
