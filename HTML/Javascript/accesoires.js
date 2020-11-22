@@ -10,10 +10,10 @@ function accesoires(merk,soort,type,image){
 
 
 const soortenaccesoires = [
-    new accesoires("Samsonite","kinderzitje","Model a","image/kinderzitje.jpg"),
-    new accesoires("AXA","fietsslot","Model b","image/fietsslotenfoto.jpg"),
-    new accesoires("M WAVE","zijwielen","Model c","image/zijwieltjes.jpg"),
-    new accesoires("YEPP","windscherm","Model e","image/windschermfietsfoto.jpg"),
+    new accesoires("Samsonite","kinderzitje","Model a","images/kinderzitje.jpg"),
+    new accesoires("AXA","fietsslot","Model b","images/fietsslotenfoto.jpg"),
+    new accesoires("M WAVE","zijwielen","Model c","images/zijwieltjes.jpg"),
+    new accesoires("YEPP","windscherm","Model e","images/windschermfietsfoto.jpg"),
     new accesoires("Ventura","helm","Model f","images/pedelec_2.0_fietshelm.jpg"),
 ];
 

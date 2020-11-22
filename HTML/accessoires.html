@@ -38,7 +38,7 @@
     <main>
         <section class="selectc">
             <h2>Selecteer hier je accessoires</h2>
-            <select id="dropDownMenu">
+            <select id="dropDownMenu" onchange="hetDropDownMenu()">
                 <option value="0">Kinderzitje</option>
                 <option value="1">Fietslot</option>
                 <option value="2">Zwijwielen</option>
@@ -71,9 +71,9 @@
         <section style="text-align: center;">
             <form id="verzendFormulier">
                 <h2>Voeg hier een accessoires toe</h2>
-                <input type="text" class="merkToevoegingen" placeholder="Merk" name="merk"><br>
-                <input type="text" class="fietsToevoegingen" placeholder="Soort" name="soort"><br>
-                <input type="text" class="typeToevoegingen" placeholder="Type" name="type"><br>
+                <input type="text" class="merkToevoegingen" placeholder="accesoires" name="merk"><br>
+                <input type="text" class="fietsToevoegingen" placeholder="soort" name="soort"><br>
+                <input type="text" class="typeToevoegingen" placeholder="type" name="type"><br>
                 <br>
                 <input type="submit" class="verstuurGegevens">
             </form>
