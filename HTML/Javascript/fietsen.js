@@ -1,4 +1,4 @@
-// script voor fietsen pagina gemaakt door ab
+// script \fietsen pagina gemaakt door AB
 // constructor voor fietsen
 function Fietsen(merk,type,soort,hoogte,aantal,image){
     this.merk = merk;
