@@ -1,5 +1,3 @@
-// script klanten gemaakt door fili  met aanwijzingen van renee door tijdsgebrek
-
 const KLANTDROP = document.getElementById("klantDropDown");
 
 
