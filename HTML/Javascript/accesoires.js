@@ -44,22 +44,16 @@ verzend.addEventListener('submit', function(event) {
     var accesoire = new accesoires(data.get('merk'),data.get('soort'),data.get('type'),);
     checkaccesoires(accesoires);
     
-
-function checkaccesoires(checkaccesoire) {
+function checkaccesoires(accesoires) {
     const gevonden = soortenaccesoires.some(accesoiresInhoud => accesoiresInhoud.merk === accesoires.merk)
     if(!gevonden) {
-        soortenaccesoires.push(accesoire);
-        alert("De accesoire: " + accesoire.merk + " is toegevoegd"); 
-        console.log(accesoire);
+        soortenaccesoires.push(accesoires);
+        alert("De accesoire: " + accesoires.merk + " is toegevoegd"); 
+        console.log(accesoires);
     } else {
         alert("De accesoire: " + accesoires.merk + " bestaat al.");
     }
 }
-
-
 });   
-
-
-
 
 // script accesoires gemaakt door tarik
