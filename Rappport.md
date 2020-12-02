@@ -337,9 +337,6 @@ Frequency of Use:	Meerderen keren per dag
 Status:	In afwachting van goedkeuring 
 Owner:	Ab Boukari
 Priority:	Hoogste prioriteit 
-		
-		
-
 
 ID: 	UC-03
 SUD:	Verhuur fiets Biker website
@@ -358,21 +355,6 @@ Frequency of Use:	Meerderen keren per dag
 Status:	In afwachting van goedkeuring 
 Owner:	Tarik el Idrissi
 Priority:	Hoogste prioriteit 
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ID: 	UC-05
@@ -395,20 +377,6 @@ Status:	In afwachting van goedkeuring
 Owner:	Cyberducks
 Priority:	Hoogste prioriteit
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ID: 	UC-06
 SUD:	Verhuur fiets Biker website
 Title:
@@ -440,13 +408,6 @@ Status:	In afwachting van goedkeuring
 Owner:	Renee Clerx
 Priority:	Hoogste prioriteit 
 	
-
-
-
-
-
-
-
 
 Prototype
 Wireframes
