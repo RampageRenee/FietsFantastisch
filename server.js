@@ -5,10 +5,13 @@ const app = express();
 
 const port = 8000;
 
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "./vieuws"));
+
 app.use(express.static(path.join(__dirname, "./HTMLNode")));
 
 app.get("/", (request, response) => {
-  response.sendFile(path.join(__dirname, "./HTMLNode/index.html"));
+  response.render("paginas/index", { paginaTitel: "Welkom" });
 });
 
 /* app.get("/fiets", (request, response) => {
