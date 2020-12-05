@@ -1,0 +1,92 @@
+{
+    "medewerkers": [
+        {
+            "medwerkernummer": "01",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+  /*           aparte tabel pagina voor alle rollen, tevens een die verwijst naar welk filiaal */
+        },{
+            "medwerkernummer": "02",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+        },
+
+        {
+            "medwerkernummer": "03",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+        },
+
+        {
+            "medwerkernummer": "04",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+        },
+
+        {
+            "medwerkernummer": "05",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+        }
+
+        {
+            "medwerkernummer": "06",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+        },
+
+        {
+            "medwerkernummer": "07",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+        },
+
+        {
+            "medwerkernummer": "08",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+        },
+
+        {
+            "medwerkernummer": "09",
+            "voornaam": "",
+            "achternaam": "",
+            "geboortedatum": "",
+            "login-naam": "",
+            "paswoord": "",
+            "basisrol": ""
+        }
+    ]
+}
