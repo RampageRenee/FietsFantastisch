@@ -10,23 +10,6 @@ app.set("views", path.join(__dirname, "./views"));
 
 app.use(express.static(path.join(__dirname, "./HTMLNode")));
 
-app.get("/", (request, response) => {
-  response.render("paginas/index", { paginaTitel: "Welkom" });
-});
-
-/* app.get("/fiets", (request, response) => {
-  response.sendFile(path.join(__dirname, "./HTMLNode/fiets.html"));
-});
-app.get("/accesoires", (request, response) => {
-  response.sendFile(path.join(__dirname, "./HTMLNode/accesoires.html"));
-});
-app.get("/klanten", (request, response) => {
-  response.sendFile(path.join(__dirname, "./HTMLNode/klanten.html"));
-});
-app.get("/medewerker", (request, response) => {
-  response.sendFile(path.join(__dirname, "./HTMLNode/medewerker.html"));
-}); */
-
 app.listen(port, () => {
   console.log(`Express server listning on port ${port}!`);
 });
