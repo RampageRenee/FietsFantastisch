@@ -23,4 +23,4 @@ De JavaScrip pagina wordt zoals CSS weer gezamelijk de HTML daar in tegen Ieder 
 
 Module 3
 
-uitgeklede versie op HTMLnode, we gaan nu met node.js Expresss aan de slag.
+uitgeklede versie op HTMLpassiefMod3, we gaan nu met node.js Expresss aan de slag.
