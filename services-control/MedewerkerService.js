@@ -25,8 +25,8 @@ class MedewerkerService {
     const data = await this.getData();
 
     // We are using map() to transform the array we get into another one
-    return data.map((medewerker) => {
-      return { naam: medewerker.naam };
+    return data.map((medewerkers) => {
+      return { naam: medewerkers.naam };
     });
   }
 
@@ -35,11 +35,11 @@ class MedewerkerService {
    */
   async getList() {
     const data = await this.getData();
-    return data.map((medewerker) => {
+    return data.map((medewerkers) => {
       return {
-        naam: medewerker.naam,
-        basisrol: medewerker.basisrol,
-        geboortedatum: medewerker.geboortedatum,
+        voornaam: medewerkers.voornaam,
+        basisrol: medewerkers.basisrol,
+        geboortedatum: medewerkers.geboortedatum,
       };
     });
   }
