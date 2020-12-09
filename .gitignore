@@ -1,6 +1,8 @@
 
 node_modules
 
+personal
+
 .eslintrc.json
 package-lock.json
 package.json
